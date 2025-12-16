@@ -1,40 +1,52 @@
 const fetch = require("node-fetch");
 
 module.exports = async function (context, req) {
+  const text = req.body?.text;
+  const lang = req.body?.lang;
 
-    const text = req.body.text;
-    const lang = req.body.lang;
+  if (!text || !lang) {
+    context.res = {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+      body: { error: "Missing parameters: text, lang" }
+    };
+    return;
+  }
 
-    if (!text || !lang) {
-        context.res = {
-            status: 400,
-            body: { error: "Missing parameters" }
-        };
-        return;
-    }
-
-    // Clé API et endpoint du service Translator (à remplacer)
-    const key = process.env.TRANSLATOR_KEY;
-    const endpoint = process.env.TRANSLATOR_ENDPOINT;
-
-    const url = `${endpoint}/translate?api-version=3.0&to=${lang}`;
-
-    const response = await fetch(url, {
-        method: "POST",
-        headers: {
-            "Ocp-Apim-Subscription-Key": key,
-            "Ocp-Apim-Subscription-Region": "westeurope",
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify([{ Text: text }])
+  try {
+    const response = await fetch("https://libretranslate.de/translate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        q: text,
+        source: "fr",
+        target: lang,
+        format: "text"
+      })
     });
 
-    const result = await response.json();
+    if (!response.ok) {
+      const errText = await response.text();
+      context.res = {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+        body: { error: "Translation API error", details: errText }
+      };
+      return;
+    }
 
-    const translation = result[0]?.translations[0]?.text || "";
+    const data = await response.json();
 
     context.res = {
-        headers: { "Content-Type": "application/json" },
-        body: { translation }
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+      body: { translation: data.translatedText || "" }
     };
+  } catch (e) {
+    context.res = {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+      body: { error: "Server error", details: e.message }
+    };
+  }
 };
