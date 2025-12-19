@@ -20,7 +20,9 @@ document.getElementById('translateBtn').addEventListener('click', async () => {
     }
 
     const data = await response.json();
-    document.getElementById('result').innerText = data.translation || "Erreur de traduction";
+    const translated = data?.[0]?.translations?.[0]?.text;
+
+    document.getElementById('result').innerText = translated || "Erreur de traduction";
   } catch (err) {
     console.error(err);
     document.getElementById('result').innerText = "Erreur : impossible de contacter l'API";
