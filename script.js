@@ -25,6 +25,6 @@ document.getElementById('translateBtn').addEventListener('click', async () => {
     document.getElementById('result').innerText = translated || "Erreur de traduction";
   } catch (err) {
     console.error(err);
-    document.getElementById('result').innerText = "Erreur : impossible de contacter l'API";
+    document.getElementById('result').innerText = "Erreur : " + err.message;
   }
 });
