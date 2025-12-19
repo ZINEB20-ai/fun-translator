@@ -1,10 +1,10 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "FUNCTIONS_WORKER_RUNTIME": "node",
-    "TRANSLATOR_KEY": "TA_CLE_ICI",
-    "TRANSLATOR_ENDPOINT": "https://api.cognitive.microsofttranslator.com",
-    "TRANSLATOR_REGION": "westeurope"
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "TRANSLATOR_KEY": "TA_CLE",
+    "TRANSLATOR_REGION": "francecentral",
+    "TRANSLATOR_ENDPOINT": "https://api.cognitive.microsofttranslator.com"
   }
 }
