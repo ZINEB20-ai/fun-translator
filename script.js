@@ -8,23 +8,30 @@ document.getElementById('translateBtn').addEventListener('click', async () => {
   }
 
   try {
-    const response = await fetch('https://funtranslatorapizineb.azurewebsites.net/api/translate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text, lang })
-    });
+    const response = await fetch(
+      'https://funtranslatorapizineb.azurewebsites.net/api/translate',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text, lang })
+      }
+    );
 
     if (!response.ok) {
-      const errText = await response.text();
-      throw new Error(errText);
+      throw new Error("Erreur HTTP " + response.status);
     }
 
     const data = await response.json();
-    const translated = data?.[0]?.translations?.[0]?.text;
 
-    document.getElementById('result').innerText = translated || "Erreur de traduction";
+    // ✅ BON CHEMIN DANS LA RÉPONSE
+    const translation = data[0]?.translations[0]?.text;
+
+    document.getElementById('result').innerText =
+      translation || "Erreur de traduction";
+
   } catch (err) {
     console.error(err);
-    document.getElementById('result').innerText = "Erreur : " + err.message;
+    document.getElementById('result').innerText =
+      "Erreur : impossible de contacter l'API";
   }
 });
