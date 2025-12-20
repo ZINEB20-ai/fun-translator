@@ -34,41 +34,79 @@ document.getElementById('translateBtn').addEventListener('click', async () => {
     document.getElementById('result').innerText =
       "Erreur : impossible de contacter l'API";
   }
-  function speak(text, langCode) {
-  if (!text) return;
+  let VOICES = [];
 
+function loadVoices() {
+  VOICES = window.speechSynthesis.getVoices();
+  // Debug utile
+  console.log("Voices loaded:", VOICES.length);
+}
+
+if ("speechSynthesis" in window) {
+  loadVoices();
+  window.speechSynthesis.onvoiceschanged = loadVoices;
+}
+
+function pickVoice(langCode) {
+  if (!VOICES || VOICES.length === 0) return null;
+
+  // 1) match exact (ex: fr-FR)
+  let v = VOICES.find(x => x.lang === langCode);
+  if (v) return v;
+
+  // 2) match par langue (ex: "fr" dans "fr-FR")
+  const short = langCode.split("-")[0];
+  v = VOICES.find(x => x.lang && x.lang.startsWith(short));
+  if (v) return v;
+
+  // 3) fallback: première voix
+  return VOICES[0];
+}
+
+function speak(text, langCode) {
+  if (!text) {
+    alert("Rien à lire.");
+    return;
+  }
   if (!("speechSynthesis" in window)) {
     alert("Ton navigateur ne supporte pas la lecture audio.");
     return;
   }
 
-  // stop si déjà en train de parler
+  // Annule toute lecture en cours
   window.speechSynthesis.cancel();
 
   const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = langCode;
 
-  // Langue pour la voix (codes navigateur)
-  // ex: fr-FR, en-US, tr-TR, hi-IN, id-ID
-  utter.lang = langCode || "en-US";
+  // Choisir une voix réellement dispo
+  const voice = pickVoice(langCode);
+  if (voice) utter.voice = voice;
+
+  // Debug
+  console.log("Speaking:", { text, langCode, voice: utter.voice?.name, voiceLang: utter.voice?.lang });
+
+  utter.onerror = (e) => console.error("Speech error:", e);
 
   window.speechSynthesis.speak(utter);
+
+  // Hack Safari: parfois il faut "resume"
+  setTimeout(() => {
+    if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+  }, 250);
 }
 
-// Écouter le texte saisi
-document.getElementById("speakInputBtn").addEventListener("click", () => {
+// Bouton écouter texte saisi
+document.getElementById("speakInputBtn")?.addEventListener("click", () => {
   const text = document.getElementById("inputText").value.trim();
-
-  // Ici on suppose que l'utilisateur écrit en français
-  // Si tu veux détecter automatiquement, on peut faire mieux.
-  speak(text, "fr-FR");
+  speak(text, "fr-FR"); // on suppose que tu écris en français
 });
 
-// Écouter la traduction
-document.getElementById("speakResultBtn").addEventListener("click", () => {
+// Bouton écouter traduction
+document.getElementById("speakResultBtn")?.addEventListener("click", () => {
   const translated = document.getElementById("result").innerText.trim();
   const lang = document.getElementById("languageSelect").value;
 
-  // Mapping simple vers des locales TTS
   const map = {
     en: "en-US",
     fr: "fr-FR",
