@@ -2,3 +2,5 @@ node_modules/
 app.zip
 .env
 .DS_Store
+local.settings.json
+api/local.settings.json
