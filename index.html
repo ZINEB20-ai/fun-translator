@@ -7,56 +7,44 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <main class="wrap">
+    <header class="header">
+      <h1>Fun Translator</h1>
+      <p>Traduction + historique (Cosmos DB) + monitoring (Application Insights)</p>
+    </header>
+
     <section class="card">
-      <div class="header">
-        <div>
-          <h1>Fun Translator</h1>
-          <p class="subtitle">Traduction rapide + lecture audio. Historique sauvegardé dans Cosmos DB (si activé côté API).</p>
-        </div>
-        <div class="badge">Azure • Functions • Translator</div>
-      </div>
+      <label class="label" for="inputText">Texte à traduire</label>
+      <textarea id="inputText" class="textarea" rows="4" placeholder="Écris un texte…"></textarea>
 
-      <div class="label">Texte à traduire</div>
-      <textarea id="inputText" placeholder="Écris ici... (ex: bonjour)"></textarea>
-
-      <div class="label">Langue cible</div>
       <div class="row">
-        <select id="languageSelect">
-          <option value="en">Anglais</option>
-          <option value="fr">Français</option>
-          <option value="es">Espagnol</option>
-          <option value="de">Allemand</option>
-          <option value="it">Italien</option>
-          <option value="tr">Turc</option>
-          <option value="hi">Hindi</option>
-        </select>
+        <div class="col">
+          <label class="label" for="languageSelect">Langue cible</label>
+          <select id="languageSelect" class="select">
+            <option value="en">Anglais</option>
+            <option value="es">Espagnol</option>
+            <option value="fr">Français</option>
+            <option value="ar">Arabe</option>
+            <option value="tr">Turc</option>
+            <option value="hi">Hindi</option>
+          </select>
+        </div>
 
-        <button id="translateBtn" class="btn btn-primary">
-          Traduire <span class="loader" aria-hidden="true"></span>
-        </button>
-
-        <button id="listenInputBtn" class="btn">🔊 Écouter le texte</button>
-        <button id="listenResultBtn" class="btn">🔊 Écouter la traduction</button>
+        <div class="col actions">
+          <button id="translateBtn" class="btn primary">Traduire</button>
+          <button id="listenInputBtn" class="btn">🔊 Écouter le texte</button>
+          <button id="listenResultBtn" class="btn">🔊 Écouter la traduction</button>
+        </div>
       </div>
 
-      <div class="label">Résultat</div>
-      <div id="result" class="result">—</div>
-      <div id="status" class="small"></div>
+      <div class="resultBox">
+        <div class="label">Résultat</div>
+        <div id="result" class="result">—</div>
+      </div>
+
+      <div id="status" class="status">Prêt.</div>
     </section>
-
-    <aside class="card">
-      <h2 style="margin:0;font-size:18px;">Conseils</h2>
-      <p class="small" style="margin-top:10px;line-height:1.6;">
-        • Si l’audio ne marche pas sur Safari : essaye de cliquer une fois sur la page puis relance “Écouter”.<br/>
-        • Assure-toi que la voix système est bien téléchargée (tu l’as déjà fait).<br/>
-        • L’API doit répondre en HTTPS quand tu es sur le site en ligne.
-      </p>
-
-      <div class="label">API utilisée</div>
-      <div class="result small" id="apiUrlBox"></div>
-    </aside>
-  </div>
+  </main>
 
   <script src="script.js"></script>
 </body>

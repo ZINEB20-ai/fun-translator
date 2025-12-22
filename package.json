@@ -1,0 +1,23 @@
+{
+  "name": "fun-translator",
+  "version": "1.0.0",
+  "main": "cosmos-read.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZINEB20-ai/fun-translator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZINEB20-ai/fun-translator/issues"
+  },
+  "homepage": "https://github.com/ZINEB20-ai/fun-translator#readme",
+  "description": "",
+  "dependencies": {
+    "@azure/cosmos": "^4.9.0"
+  }
+}
