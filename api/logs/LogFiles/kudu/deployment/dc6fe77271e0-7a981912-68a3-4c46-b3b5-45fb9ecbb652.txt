@@ -1,0 +1,11 @@
+2025-12-22T15:10:00  Fetching changes.
+2025-12-22T15:10:00    Starting  LocalZipHandler
+2025-12-22T15:10:04  Updating submodules.
+2025-12-22T15:10:04  Preparing deployment for commit id 'da64a1db-f'.
+2025-12-22T15:10:05  PreDeployment: context.CleanOutputPath False
+2025-12-22T15:10:05  PreDeployment: context.OutputPath /home/site/wwwroot
+2025-12-22T15:10:06  Skipping build. Project type: Run-From-Zip
+2025-12-22T15:10:06  Skipping post build. Project type: Run-From-Zip
+2025-12-22T15:10:06  Triggering recycle (preview mode disabled).
+2025-12-22T15:10:06  Updating /home/data/SitePackages/packagename.txt with deployment 20251222150934.zip
+2025-12-22T15:10:06  Deployment successful. deployer = Push-Deployer deploymentPath = Functions App ZipDeploy. Run from package.

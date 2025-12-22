@@ -1,0 +1,6 @@
+<step title="Incoming Request" date="2025-12-22T16:33:22.855" instance="f0e560" url="/api/deployments/da64a1db-fef2-4fc9-a9c5-e54f994a2747/log" method="GET" type="request" pid="769,1,18" Accept="*/*" Host="funtranslatorapizineb.scm.azurewebsites.net" User-Agent="AZURECLI/2.81.0 (HOMEBREW)" Accept-Encoding="gzip, deflate" Authorization="Bea..." x-ms-client-request-id="e358fcf6-df53-11f0-8861-acde48001122" X-ARR-LOG-ID="e358fcf6-df53-11f0-8861-acde48001122" CLIENT-IP="197.230.166.242:45469" X-SITE-DEPLOYMENT-ID="funtranslatorapizineb" WAS-DEFAULT-HOSTNAME="funtranslatorapizineb.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/deployments/da64a1db-fef2-4fc9-a9c5-e54f994a2747/log" X-Client-IP="197.230.166.242" X-Client-Port="45469" >
+  <step title="DeploymentService.GetLogEntry" date="2025-12-22T16:33:22.950" >
+    <step title="DeploymentManager.GetLogEntries(id:da64a1db-fef2-4fc9-a9c5-e54f994a2747)" date="2025-12-22T16:33:22.966" /><!-- duration: 39ms -->
+  </step><!-- duration: 58ms -->
+  <step title="Outgoing response" date="2025-12-22T16:33:23.034" type="response" statusCode="200" statusText="OK" /><!-- duration: 2ms -->
+</step><!-- duration: 184ms -->

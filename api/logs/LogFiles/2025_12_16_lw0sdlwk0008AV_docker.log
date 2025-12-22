@@ -1,0 +1,593 @@
+2025-12-16T20:18:51.1183609Z Container start method called.
+2025-12-16T20:18:51.1665036Z Establishing network.
+2025-12-16T20:18:51.1679614Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T20:19:53.2676161Z Image azure-functions/node:4-node24-appservice-stage5 is pulled from registry mcr.microsoft.com
+2025-12-16T20:19:53.3081156Z Container is starting.
+2025-12-16T20:19:53.3205611Z Establishing user namespace if not established already.
+2025-12-16T20:19:53.3211687Z Establishing network if not established already.
+2025-12-16T20:19:53.3215452Z Mounting volumes.
+2025-12-16T20:19:53.3351774Z Nested mountpoint 
+2025-12-16T20:19:53.4340060Z Nested mountpoint volatile/logs
+2025-12-16T20:19:53.4629122Z Nested mountpoint 
+2025-12-16T20:19:53.4740691Z Nested mountpoint 
+2025-12-16T20:19:53.5530663Z Nested mountpoint 
+2025-12-16T20:19:53.7176883Z Creating container.
+2025-12-16T20:19:53.7182529Z Creating pipes for streaming container io.
+2025-12-16T20:19:53.7192549Z Creating stdout named pipe at /podr/container/pipe/e7c41d0d4b96_funtranslatorapizineb/stdout_82bca17c17b54bbb97f01a09e0c48ad6.
+2025-12-16T20:19:53.7350261Z Successfully created stdout named pipe at: /podr/container/pipe/e7c41d0d4b96_funtranslatorapizineb/stdout_82bca17c17b54bbb97f01a09e0c48ad6.
+2025-12-16T20:19:53.7361252Z Opening named pipe /podr/container/pipe/e7c41d0d4b96_funtranslatorapizineb/stdout_82bca17c17b54bbb97f01a09e0c48ad6 for reading in non-blocking mode.
+2025-12-16T20:19:53.7364011Z Successfully opened named pipe: /podr/container/pipe/e7c41d0d4b96_funtranslatorapizineb/stdout_82bca17c17b54bbb97f01a09e0c48ad6.
+2025-12-16T20:19:53.7374379Z Successfully removed non-blocking flag from /podr/container/pipe/e7c41d0d4b96_funtranslatorapizineb/stdout_82bca17c17b54bbb97f01a09e0c48ad6.
+2025-12-16T20:19:53.7376605Z Creating stderr named pipe at /podr/container/pipe/e7c41d0d4b96_funtranslatorapizineb/stderr_4605fc6d38ae4969ab2c587d25c53c20.
+2025-12-16T20:19:53.7379700Z Successfully created stderr named pipe at: /podr/container/pipe/e7c41d0d4b96_funtranslatorapizineb/stderr_4605fc6d38ae4969ab2c587d25c53c20.
+2025-12-16T20:19:53.7382515Z Opening named pipe /podr/container/pipe/e7c41d0d4b96_funtranslatorapizineb/stderr_4605fc6d38ae4969ab2c587d25c53c20 for reading in non-blocking mode.
+2025-12-16T20:19:53.7384653Z Successfully opened named pipe: /podr/container/pipe/e7c41d0d4b96_funtranslatorapizineb/stderr_4605fc6d38ae4969ab2c587d25c53c20.
+2025-12-16T20:19:53.7496127Z Successfully removed non-blocking flag from /podr/container/pipe/e7c41d0d4b96_funtranslatorapizineb/stderr_4605fc6d38ae4969ab2c587d25c53c20.
+2025-12-16T20:19:53.7561804Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T20:19:54.3686041Z Container get mounts received unexpected exception.
+2025-12-16T20:19:54.4455172Z Container get mounts received unexpected exception.
+2025-12-16T20:19:54.4936914Z Container get processes received unexpected exception.
+2025-12-16T20:19:54.5127535Z Container get processes received unexpected exception.
+2025-12-16T20:19:56.4921454Z Starting container: e7c41d0d4b96_funtranslatorapizineb.
+2025-12-16T20:19:56.9476725Z Starting watchers and probes.
+2025-12-16T20:19:57.1073599Z Starting metrics collection.
+2025-12-16T20:19:57.1454996Z Container is running.
+2025-12-16T20:19:58.5557732Z Container start method finished after 67417 ms.
+2025-12-16T20:20:13.3039410Z Site startup probe succeeded after 14.504749 seconds.
+2025-12-16T20:20:13.6472546Z Site started.
+2025-12-16T20:20:22.9582900Z Container start method called.
+2025-12-16T20:20:23.0467988Z Establishing network.
+2025-12-16T20:20:23.0565157Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T20:20:23.7287438Z Container is starting.
+2025-12-16T20:20:23.7361350Z Establishing user namespace if not established already.
+2025-12-16T20:20:23.7372663Z Establishing network if not established already.
+2025-12-16T20:20:23.7378678Z Mounting volumes.
+2025-12-16T20:20:23.7453252Z Nested mountpoint 
+2025-12-16T20:20:23.8159955Z Nested mountpoint volatile/logs
+2025-12-16T20:20:23.8335379Z Nested mountpoint 
+2025-12-16T20:20:23.9470025Z Nested mountpoint 
+2025-12-16T20:20:23.9668692Z Nested mountpoint 
+2025-12-16T20:20:24.0155865Z Creating container.
+2025-12-16T20:20:24.0170378Z Creating pipes for streaming container io.
+2025-12-16T20:20:24.0248938Z Creating stdout named pipe at /podr/container/pipe/3f9eed680e1f_funtranslatorapizineb/stdout_e6af3b19518d489b90f6b7fbc6ae3af6.
+2025-12-16T20:20:24.0337507Z Successfully created stdout named pipe at: /podr/container/pipe/3f9eed680e1f_funtranslatorapizineb/stdout_e6af3b19518d489b90f6b7fbc6ae3af6.
+2025-12-16T20:20:24.0357508Z Opening named pipe /podr/container/pipe/3f9eed680e1f_funtranslatorapizineb/stdout_e6af3b19518d489b90f6b7fbc6ae3af6 for reading in non-blocking mode.
+2025-12-16T20:20:24.0441491Z Successfully opened named pipe: /podr/container/pipe/3f9eed680e1f_funtranslatorapizineb/stdout_e6af3b19518d489b90f6b7fbc6ae3af6.
+2025-12-16T20:20:24.0751857Z Successfully removed non-blocking flag from /podr/container/pipe/3f9eed680e1f_funtranslatorapizineb/stdout_e6af3b19518d489b90f6b7fbc6ae3af6.
+2025-12-16T20:20:24.0937474Z Creating stderr named pipe at /podr/container/pipe/3f9eed680e1f_funtranslatorapizineb/stderr_7f6dc8ddf9534fc8b00685462dfe11f4.
+2025-12-16T20:20:24.1025202Z Successfully created stderr named pipe at: /podr/container/pipe/3f9eed680e1f_funtranslatorapizineb/stderr_7f6dc8ddf9534fc8b00685462dfe11f4.
+2025-12-16T20:20:24.1038682Z Opening named pipe /podr/container/pipe/3f9eed680e1f_funtranslatorapizineb/stderr_7f6dc8ddf9534fc8b00685462dfe11f4 for reading in non-blocking mode.
+2025-12-16T20:20:24.1423044Z Successfully opened named pipe: /podr/container/pipe/3f9eed680e1f_funtranslatorapizineb/stderr_7f6dc8ddf9534fc8b00685462dfe11f4.
+2025-12-16T20:20:24.1424804Z Successfully removed non-blocking flag from /podr/container/pipe/3f9eed680e1f_funtranslatorapizineb/stderr_7f6dc8ddf9534fc8b00685462dfe11f4.
+2025-12-16T20:20:24.1426408Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T20:20:24.8687366Z Starting container: 3f9eed680e1f_funtranslatorapizineb.
+2025-12-16T20:20:25.0346187Z Starting watchers and probes.
+2025-12-16T20:20:25.0419720Z Starting metrics collection.
+2025-12-16T20:20:25.0424464Z Container is running.
+2025-12-16T20:20:25.2841079Z Container start method finished after 2255 ms.
+2025-12-16T20:20:40.6555474Z Site startup probe succeeded after 15.3504313 seconds.
+2025-12-16T20:20:40.9634406Z Site started.
+2025-12-16T20:21:01.4897748Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T20:21:01.7519439Z Stop and delete container. Retry count = 0
+2025-12-16T20:21:01.7626397Z Stopping container: e7c41d0d4b96_funtranslatorapizineb.
+2025-12-16T20:21:07.4262660Z Deleting container: e7c41d0d4b96_funtranslatorapizineb. Retry count = 0
+2025-12-16T20:21:08.9116487Z Container spec TerminationMessagePolicy  path 
+2025-12-16T20:21:08.9587059Z Container is terminated. Total time elapsed: 7440 ms.
+2025-12-16T20:21:08.9905226Z Site: funtranslatorapizineb stopped.
+2025-12-16T20:21:35.4905879Z Container start method called.
+2025-12-16T20:21:35.4921811Z Establishing network.
+2025-12-16T20:21:35.4930739Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T20:21:36.2753278Z Container is starting.
+2025-12-16T20:21:36.2866460Z Establishing user namespace if not established already.
+2025-12-16T20:21:36.2930351Z Establishing network if not established already.
+2025-12-16T20:21:36.2940894Z Mounting volumes.
+2025-12-16T20:21:36.2951677Z Nested mountpoint 
+2025-12-16T20:21:36.3993519Z Nested mountpoint volatile/logs
+2025-12-16T20:21:36.4183014Z Nested mountpoint 
+2025-12-16T20:21:36.4653548Z Nested mountpoint 
+2025-12-16T20:21:36.5323669Z Nested mountpoint 
+2025-12-16T20:21:36.7936724Z Creating container.
+2025-12-16T20:21:36.8045923Z Creating pipes for streaming container io.
+2025-12-16T20:21:36.8048956Z Creating stdout named pipe at /podr/container/pipe/119c1ae3858d_funtranslatorapizineb/stdout_d3652bb5ebbe478c811621286f50a19f.
+2025-12-16T20:21:36.8211798Z Successfully created stdout named pipe at: /podr/container/pipe/119c1ae3858d_funtranslatorapizineb/stdout_d3652bb5ebbe478c811621286f50a19f.
+2025-12-16T20:21:36.8244201Z Opening named pipe /podr/container/pipe/119c1ae3858d_funtranslatorapizineb/stdout_d3652bb5ebbe478c811621286f50a19f for reading in non-blocking mode.
+2025-12-16T20:21:36.8411422Z Successfully opened named pipe: /podr/container/pipe/119c1ae3858d_funtranslatorapizineb/stdout_d3652bb5ebbe478c811621286f50a19f.
+2025-12-16T20:21:36.8412943Z Successfully removed non-blocking flag from /podr/container/pipe/119c1ae3858d_funtranslatorapizineb/stdout_d3652bb5ebbe478c811621286f50a19f.
+2025-12-16T20:21:36.8414214Z Creating stderr named pipe at /podr/container/pipe/119c1ae3858d_funtranslatorapizineb/stderr_ea4f039002ea43679c6eda0adb055b3d.
+2025-12-16T20:21:36.8416133Z Successfully created stderr named pipe at: /podr/container/pipe/119c1ae3858d_funtranslatorapizineb/stderr_ea4f039002ea43679c6eda0adb055b3d.
+2025-12-16T20:21:36.8502884Z Opening named pipe /podr/container/pipe/119c1ae3858d_funtranslatorapizineb/stderr_ea4f039002ea43679c6eda0adb055b3d for reading in non-blocking mode.
+2025-12-16T20:21:36.8505121Z Successfully opened named pipe: /podr/container/pipe/119c1ae3858d_funtranslatorapizineb/stderr_ea4f039002ea43679c6eda0adb055b3d.
+2025-12-16T20:21:36.8506331Z Successfully removed non-blocking flag from /podr/container/pipe/119c1ae3858d_funtranslatorapizineb/stderr_ea4f039002ea43679c6eda0adb055b3d.
+2025-12-16T20:21:36.8507687Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T20:21:38.0428297Z Starting container: 119c1ae3858d_funtranslatorapizineb.
+2025-12-16T20:21:38.2748904Z Starting watchers and probes.
+2025-12-16T20:21:38.2817305Z Starting metrics collection.
+2025-12-16T20:21:38.3211921Z Container is running.
+2025-12-16T20:21:38.7208794Z Container start method finished after 3229 ms.
+2025-12-16T20:21:59.4944359Z Site startup probe succeeded after 20.6807838 seconds.
+2025-12-16T20:22:00.1783896Z Site started.
+2025-12-16T20:22:21.0173111Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T20:22:21.1782642Z Stop and delete container. Retry count = 0
+2025-12-16T20:22:21.1789952Z Stopping container: 3f9eed680e1f_funtranslatorapizineb.
+2025-12-16T20:22:27.6949208Z Deleting container: 3f9eed680e1f_funtranslatorapizineb. Retry count = 0
+2025-12-16T20:22:28.8641270Z Container spec TerminationMessagePolicy  path 
+2025-12-16T20:22:28.8803490Z Container is terminated. Total time elapsed: 7859 ms.
+2025-12-16T20:22:28.8806189Z Site: funtranslatorapizineb stopped.
+2025-12-16T20:57:19.0480651Z Container start method called.
+2025-12-16T20:57:19.0494882Z Establishing network.
+2025-12-16T20:57:19.0500393Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T20:57:24.4660518Z Container is starting.
+2025-12-16T20:57:24.4663687Z Establishing user namespace if not established already.
+2025-12-16T20:57:24.4665139Z Establishing network if not established already.
+2025-12-16T20:57:24.4666454Z Mounting volumes.
+2025-12-16T20:57:24.4680164Z Nested mountpoint 
+2025-12-16T20:57:24.5653847Z Nested mountpoint volatile/logs
+2025-12-16T20:57:24.6915360Z Nested mountpoint 
+2025-12-16T20:57:24.6990957Z Nested mountpoint 
+2025-12-16T20:57:24.8069398Z Nested mountpoint 
+2025-12-16T20:57:24.9798199Z Creating container.
+2025-12-16T20:57:25.0272238Z Creating pipes for streaming container io.
+2025-12-16T20:57:25.0354928Z Creating stdout named pipe at /podr/container/pipe/7d07329894d1_funtranslatorapizineb/stdout_ace002f4aa934dd19a47a734a24a08ef.
+2025-12-16T20:57:25.1136849Z Successfully created stdout named pipe at: /podr/container/pipe/7d07329894d1_funtranslatorapizineb/stdout_ace002f4aa934dd19a47a734a24a08ef.
+2025-12-16T20:57:25.1144324Z Opening named pipe /podr/container/pipe/7d07329894d1_funtranslatorapizineb/stdout_ace002f4aa934dd19a47a734a24a08ef for reading in non-blocking mode.
+2025-12-16T20:57:25.1146717Z Successfully opened named pipe: /podr/container/pipe/7d07329894d1_funtranslatorapizineb/stdout_ace002f4aa934dd19a47a734a24a08ef.
+2025-12-16T20:57:25.1150127Z Successfully removed non-blocking flag from /podr/container/pipe/7d07329894d1_funtranslatorapizineb/stdout_ace002f4aa934dd19a47a734a24a08ef.
+2025-12-16T20:57:25.1152996Z Creating stderr named pipe at /podr/container/pipe/7d07329894d1_funtranslatorapizineb/stderr_facb5f325d5940dd8c1bd575102ffa66.
+2025-12-16T20:57:25.1162913Z Successfully created stderr named pipe at: /podr/container/pipe/7d07329894d1_funtranslatorapizineb/stderr_facb5f325d5940dd8c1bd575102ffa66.
+2025-12-16T20:57:25.1164544Z Opening named pipe /podr/container/pipe/7d07329894d1_funtranslatorapizineb/stderr_facb5f325d5940dd8c1bd575102ffa66 for reading in non-blocking mode.
+2025-12-16T20:57:25.1438479Z Successfully opened named pipe: /podr/container/pipe/7d07329894d1_funtranslatorapizineb/stderr_facb5f325d5940dd8c1bd575102ffa66.
+2025-12-16T20:57:25.1446595Z Successfully removed non-blocking flag from /podr/container/pipe/7d07329894d1_funtranslatorapizineb/stderr_facb5f325d5940dd8c1bd575102ffa66.
+2025-12-16T20:57:25.1547930Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T20:57:28.3964073Z Starting container: 7d07329894d1_funtranslatorapizineb.
+2025-12-16T20:57:28.6561137Z Starting watchers and probes.
+2025-12-16T20:57:28.7794728Z Starting metrics collection.
+2025-12-16T20:57:28.7810737Z Container is running.
+2025-12-16T20:57:29.5198683Z Container start method finished after 10451 ms.
+2025-12-16T20:57:44.2284852Z Site startup probe succeeded after 14.5580253 seconds.
+2025-12-16T20:57:53.2642875Z Site started.
+2025-12-16T20:58:13.3799320Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T20:58:13.4753882Z Stop and delete container. Retry count = 0
+2025-12-16T20:58:13.4766477Z Stopping container: 119c1ae3858d_funtranslatorapizineb.
+2025-12-16T20:58:18.7382167Z Deleting container: 119c1ae3858d_funtranslatorapizineb. Retry count = 0
+2025-12-16T20:58:19.0508671Z Container spec TerminationMessagePolicy  path 
+2025-12-16T20:58:19.0579514Z Container is terminated. Total time elapsed: 5671 ms.
+2025-12-16T20:58:19.0582061Z Site: funtranslatorapizineb stopped.
+2025-12-16T21:25:47.9248923Z Container start method called.
+2025-12-16T21:25:47.9338883Z Establishing network.
+2025-12-16T21:25:47.9448323Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T21:25:49.7123177Z Container is starting.
+2025-12-16T21:25:49.7136528Z Establishing user namespace if not established already.
+2025-12-16T21:25:49.7143509Z Establishing network if not established already.
+2025-12-16T21:25:49.7239462Z Mounting volumes.
+2025-12-16T21:25:49.7319941Z Nested mountpoint 
+2025-12-16T21:25:49.7733112Z Nested mountpoint volatile/logs
+2025-12-16T21:25:49.8869948Z Nested mountpoint 
+2025-12-16T21:25:49.9554113Z Nested mountpoint 
+2025-12-16T21:25:50.1763874Z Nested mountpoint 
+2025-12-16T21:25:50.2160445Z Creating container.
+2025-12-16T21:25:50.2264445Z Creating pipes for streaming container io.
+2025-12-16T21:25:50.2339622Z Creating stdout named pipe at /podr/container/pipe/61e6ee0c9e53_funtranslatorapizineb/stdout_752d106bd0fb4a59bc429abbf1176cd4.
+2025-12-16T21:25:50.2360152Z Successfully created stdout named pipe at: /podr/container/pipe/61e6ee0c9e53_funtranslatorapizineb/stdout_752d106bd0fb4a59bc429abbf1176cd4.
+2025-12-16T21:25:50.2425729Z Opening named pipe /podr/container/pipe/61e6ee0c9e53_funtranslatorapizineb/stdout_752d106bd0fb4a59bc429abbf1176cd4 for reading in non-blocking mode.
+2025-12-16T21:25:50.2433277Z Successfully opened named pipe: /podr/container/pipe/61e6ee0c9e53_funtranslatorapizineb/stdout_752d106bd0fb4a59bc429abbf1176cd4.
+2025-12-16T21:25:50.2526089Z Successfully removed non-blocking flag from /podr/container/pipe/61e6ee0c9e53_funtranslatorapizineb/stdout_752d106bd0fb4a59bc429abbf1176cd4.
+2025-12-16T21:25:50.2544086Z Creating stderr named pipe at /podr/container/pipe/61e6ee0c9e53_funtranslatorapizineb/stderr_a69f681330794f17a821351b70b316da.
+2025-12-16T21:25:50.2618593Z Successfully created stderr named pipe at: /podr/container/pipe/61e6ee0c9e53_funtranslatorapizineb/stderr_a69f681330794f17a821351b70b316da.
+2025-12-16T21:25:50.2630672Z Opening named pipe /podr/container/pipe/61e6ee0c9e53_funtranslatorapizineb/stderr_a69f681330794f17a821351b70b316da for reading in non-blocking mode.
+2025-12-16T21:25:50.2648325Z Successfully opened named pipe: /podr/container/pipe/61e6ee0c9e53_funtranslatorapizineb/stderr_a69f681330794f17a821351b70b316da.
+2025-12-16T21:25:50.2729359Z Successfully removed non-blocking flag from /podr/container/pipe/61e6ee0c9e53_funtranslatorapizineb/stderr_a69f681330794f17a821351b70b316da.
+2025-12-16T21:25:50.2740359Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T21:25:51.3857627Z Starting container: 61e6ee0c9e53_funtranslatorapizineb.
+2025-12-16T21:25:51.5528720Z Starting watchers and probes.
+2025-12-16T21:25:51.5795411Z Starting metrics collection.
+2025-12-16T21:25:51.6193013Z Container is running.
+2025-12-16T21:25:52.3476400Z Container start method finished after 4421 ms.
+2025-12-16T21:26:07.5793422Z Site startup probe succeeded after 15.1941991 seconds.
+2025-12-16T21:26:17.6786075Z Site started.
+2025-12-16T21:26:37.9009671Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T21:26:37.9596991Z Stop and delete container. Retry count = 0
+2025-12-16T21:26:37.9688147Z Stopping container: 7d07329894d1_funtranslatorapizineb.
+2025-12-16T21:26:43.1985821Z Deleting container: 7d07329894d1_funtranslatorapizineb. Retry count = 0
+2025-12-16T21:26:43.4974887Z Container spec TerminationMessagePolicy  path 
+2025-12-16T21:26:43.4981756Z Container is terminated. Total time elapsed: 5595 ms.
+2025-12-16T21:26:43.4998531Z Site: funtranslatorapizineb stopped.
+2025-12-16T21:51:27.6581479Z Failed to start site. Revert by stopping site.
+2025-12-16T21:51:27.8293442Z Site: funtranslatorapizineb stopped.
+2025-12-16T21:51:49.4342813Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T21:51:49.4810373Z Stop and delete container. Retry count = 0
+2025-12-16T21:51:49.4826812Z Stopping container: 61e6ee0c9e53_funtranslatorapizineb.
+2025-12-16T21:51:55.4256158Z Deleting container: 61e6ee0c9e53_funtranslatorapizineb. Retry count = 0
+2025-12-16T21:51:56.0508290Z Container spec TerminationMessagePolicy  path 
+2025-12-16T21:51:56.0534867Z Container is terminated. Total time elapsed: 6617 ms.
+2025-12-16T21:51:56.0723102Z Site: funtranslatorapizineb stopped.
+2025-12-16T21:52:22.8729985Z Container start method called.
+2025-12-16T21:52:22.8925921Z Establishing network.
+2025-12-16T21:52:22.9213568Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T21:52:23.9699579Z Container is starting.
+2025-12-16T21:52:23.9782236Z Establishing user namespace if not established already.
+2025-12-16T21:52:23.9795519Z Establishing network if not established already.
+2025-12-16T21:52:23.9803908Z Mounting volumes.
+2025-12-16T21:52:23.9894621Z Nested mountpoint 
+2025-12-16T21:52:24.0668150Z Nested mountpoint volatile/logs
+2025-12-16T21:52:24.1141533Z Nested mountpoint 
+2025-12-16T21:52:24.2524368Z Nested mountpoint 
+2025-12-16T21:52:24.3491771Z Nested mountpoint 
+2025-12-16T21:52:24.4627987Z Creating container.
+2025-12-16T21:52:24.5114332Z Creating pipes for streaming container io.
+2025-12-16T21:52:24.5116215Z Creating stdout named pipe at /podr/container/pipe/dae3f985b03b_funtranslatorapizineb/stdout_907d4d1d3371439487805b672b4293dd.
+2025-12-16T21:52:24.5217678Z Successfully created stdout named pipe at: /podr/container/pipe/dae3f985b03b_funtranslatorapizineb/stdout_907d4d1d3371439487805b672b4293dd.
+2025-12-16T21:52:24.5219058Z Opening named pipe /podr/container/pipe/dae3f985b03b_funtranslatorapizineb/stdout_907d4d1d3371439487805b672b4293dd for reading in non-blocking mode.
+2025-12-16T21:52:24.5286509Z Successfully opened named pipe: /podr/container/pipe/dae3f985b03b_funtranslatorapizineb/stdout_907d4d1d3371439487805b672b4293dd.
+2025-12-16T21:52:24.5288318Z Successfully removed non-blocking flag from /podr/container/pipe/dae3f985b03b_funtranslatorapizineb/stdout_907d4d1d3371439487805b672b4293dd.
+2025-12-16T21:52:24.5290533Z Creating stderr named pipe at /podr/container/pipe/dae3f985b03b_funtranslatorapizineb/stderr_72fbe3876d8b4ba68e2b4999f116c7ef.
+2025-12-16T21:52:24.5297520Z Successfully created stderr named pipe at: /podr/container/pipe/dae3f985b03b_funtranslatorapizineb/stderr_72fbe3876d8b4ba68e2b4999f116c7ef.
+2025-12-16T21:52:24.5304645Z Opening named pipe /podr/container/pipe/dae3f985b03b_funtranslatorapizineb/stderr_72fbe3876d8b4ba68e2b4999f116c7ef for reading in non-blocking mode.
+2025-12-16T21:52:24.5306715Z Successfully opened named pipe: /podr/container/pipe/dae3f985b03b_funtranslatorapizineb/stderr_72fbe3876d8b4ba68e2b4999f116c7ef.
+2025-12-16T21:52:24.5308346Z Successfully removed non-blocking flag from /podr/container/pipe/dae3f985b03b_funtranslatorapizineb/stderr_72fbe3876d8b4ba68e2b4999f116c7ef.
+2025-12-16T21:52:24.5317380Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T21:52:26.2433064Z Starting container: dae3f985b03b_funtranslatorapizineb.
+2025-12-16T21:52:26.3916589Z Starting watchers and probes.
+2025-12-16T21:52:26.4293036Z Starting metrics collection.
+2025-12-16T21:52:26.4294872Z Container is running.
+2025-12-16T21:52:26.7370597Z Container start method finished after 3844 ms.
+2025-12-16T21:52:40.7664183Z Site startup probe succeeded after 13.9422033 seconds.
+2025-12-16T21:52:48.0153925Z Site started.
+2025-12-16T21:57:08.5874408Z Container start method called.
+2025-12-16T21:57:08.6353673Z Establishing network.
+2025-12-16T21:57:08.6355559Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T21:57:10.5769974Z Container is starting.
+2025-12-16T21:57:10.5846798Z Establishing user namespace if not established already.
+2025-12-16T21:57:10.5867961Z Establishing network if not established already.
+2025-12-16T21:57:10.6023187Z Mounting volumes.
+2025-12-16T21:57:10.6057333Z Nested mountpoint 
+2025-12-16T21:57:10.6925232Z Nested mountpoint volatile/logs
+2025-12-16T21:57:10.8049081Z Nested mountpoint 
+2025-12-16T21:57:11.0334128Z Nested mountpoint 
+2025-12-16T21:57:11.3190031Z Nested mountpoint 
+2025-12-16T21:57:11.3613729Z Creating container.
+2025-12-16T21:57:11.3615570Z Creating pipes for streaming container io.
+2025-12-16T21:57:11.3865935Z Creating stdout named pipe at /podr/container/pipe/2ed1cc0deb5f_funtranslatorapizineb/stdout_e1a821ae7d8a4841a48cfeecb8caf5bc.
+2025-12-16T21:57:11.3883364Z Successfully created stdout named pipe at: /podr/container/pipe/2ed1cc0deb5f_funtranslatorapizineb/stdout_e1a821ae7d8a4841a48cfeecb8caf5bc.
+2025-12-16T21:57:11.3901592Z Opening named pipe /podr/container/pipe/2ed1cc0deb5f_funtranslatorapizineb/stdout_e1a821ae7d8a4841a48cfeecb8caf5bc for reading in non-blocking mode.
+2025-12-16T21:57:11.4171242Z Successfully opened named pipe: /podr/container/pipe/2ed1cc0deb5f_funtranslatorapizineb/stdout_e1a821ae7d8a4841a48cfeecb8caf5bc.
+2025-12-16T21:57:11.4173751Z Successfully removed non-blocking flag from /podr/container/pipe/2ed1cc0deb5f_funtranslatorapizineb/stdout_e1a821ae7d8a4841a48cfeecb8caf5bc.
+2025-12-16T21:57:11.4175659Z Creating stderr named pipe at /podr/container/pipe/2ed1cc0deb5f_funtranslatorapizineb/stderr_48021d9ad7cf4c9d9279aa392f744d4c.
+2025-12-16T21:57:11.4178567Z Successfully created stderr named pipe at: /podr/container/pipe/2ed1cc0deb5f_funtranslatorapizineb/stderr_48021d9ad7cf4c9d9279aa392f744d4c.
+2025-12-16T21:57:11.4179772Z Opening named pipe /podr/container/pipe/2ed1cc0deb5f_funtranslatorapizineb/stderr_48021d9ad7cf4c9d9279aa392f744d4c for reading in non-blocking mode.
+2025-12-16T21:57:11.4181695Z Successfully opened named pipe: /podr/container/pipe/2ed1cc0deb5f_funtranslatorapizineb/stderr_48021d9ad7cf4c9d9279aa392f744d4c.
+2025-12-16T21:57:11.4182908Z Successfully removed non-blocking flag from /podr/container/pipe/2ed1cc0deb5f_funtranslatorapizineb/stderr_48021d9ad7cf4c9d9279aa392f744d4c.
+2025-12-16T21:57:11.4184089Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T21:57:12.9216047Z Starting container: 2ed1cc0deb5f_funtranslatorapizineb.
+2025-12-16T21:57:13.0932684Z Starting watchers and probes.
+2025-12-16T21:57:13.0937301Z Starting metrics collection.
+2025-12-16T21:57:13.0938958Z Container is running.
+2025-12-16T21:57:13.5899805Z Container start method finished after 5002 ms.
+2025-12-16T21:57:42.0496500Z Site startup probe succeeded after 28.4494475 seconds.
+2025-12-16T21:57:51.1336379Z Site started.
+2025-12-16T21:58:11.2156769Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T21:58:11.2656415Z Stop and delete container. Retry count = 0
+2025-12-16T21:58:11.2657981Z Stopping container: dae3f985b03b_funtranslatorapizineb.
+2025-12-16T21:58:16.5181189Z Deleting container: dae3f985b03b_funtranslatorapizineb. Retry count = 0
+2025-12-16T21:58:16.8630805Z Container spec TerminationMessagePolicy  path 
+2025-12-16T21:58:16.8647748Z Container is terminated. Total time elapsed: 5642 ms.
+2025-12-16T21:58:16.8726695Z Site: funtranslatorapizineb stopped.
+2025-12-16T22:07:59.2852066Z Container start method called.
+2025-12-16T22:07:59.2936676Z Establishing network.
+2025-12-16T22:07:59.2938445Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T22:07:59.9063893Z Container is starting.
+2025-12-16T22:07:59.9066548Z Establishing user namespace if not established already.
+2025-12-16T22:07:59.9067585Z Establishing network if not established already.
+2025-12-16T22:07:59.9068999Z Mounting volumes.
+2025-12-16T22:07:59.9071141Z Nested mountpoint 
+2025-12-16T22:07:59.9278353Z Nested mountpoint volatile/logs
+2025-12-16T22:07:59.9811220Z Nested mountpoint 
+2025-12-16T22:08:00.0124012Z Nested mountpoint 
+2025-12-16T22:08:00.1136066Z Nested mountpoint 
+2025-12-16T22:08:00.1785560Z Creating container.
+2025-12-16T22:08:00.1787176Z Creating pipes for streaming container io.
+2025-12-16T22:08:00.1788219Z Creating stdout named pipe at /podr/container/pipe/550faf5717e6_funtranslatorapizineb/stdout_0fdb1fdf31944ee5b75c0b0d3c8898f4.
+2025-12-16T22:08:00.1894867Z Successfully created stdout named pipe at: /podr/container/pipe/550faf5717e6_funtranslatorapizineb/stdout_0fdb1fdf31944ee5b75c0b0d3c8898f4.
+2025-12-16T22:08:00.1896167Z Opening named pipe /podr/container/pipe/550faf5717e6_funtranslatorapizineb/stdout_0fdb1fdf31944ee5b75c0b0d3c8898f4 for reading in non-blocking mode.
+2025-12-16T22:08:00.1897485Z Successfully opened named pipe: /podr/container/pipe/550faf5717e6_funtranslatorapizineb/stdout_0fdb1fdf31944ee5b75c0b0d3c8898f4.
+2025-12-16T22:08:00.1898459Z Successfully removed non-blocking flag from /podr/container/pipe/550faf5717e6_funtranslatorapizineb/stdout_0fdb1fdf31944ee5b75c0b0d3c8898f4.
+2025-12-16T22:08:00.1899614Z Creating stderr named pipe at /podr/container/pipe/550faf5717e6_funtranslatorapizineb/stderr_cc145da2b9cd4eb7b04d3864b20ab40c.
+2025-12-16T22:08:00.1901292Z Successfully created stderr named pipe at: /podr/container/pipe/550faf5717e6_funtranslatorapizineb/stderr_cc145da2b9cd4eb7b04d3864b20ab40c.
+2025-12-16T22:08:00.1902249Z Opening named pipe /podr/container/pipe/550faf5717e6_funtranslatorapizineb/stderr_cc145da2b9cd4eb7b04d3864b20ab40c for reading in non-blocking mode.
+2025-12-16T22:08:00.1903466Z Successfully opened named pipe: /podr/container/pipe/550faf5717e6_funtranslatorapizineb/stderr_cc145da2b9cd4eb7b04d3864b20ab40c.
+2025-12-16T22:08:00.1904578Z Successfully removed non-blocking flag from /podr/container/pipe/550faf5717e6_funtranslatorapizineb/stderr_cc145da2b9cd4eb7b04d3864b20ab40c.
+2025-12-16T22:08:00.1905759Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T22:08:01.0825556Z Starting container: 550faf5717e6_funtranslatorapizineb.
+2025-12-16T22:08:01.2014308Z Starting watchers and probes.
+2025-12-16T22:08:01.2195639Z Starting metrics collection.
+2025-12-16T22:08:01.2203540Z Container is running.
+2025-12-16T22:08:01.4996366Z Container start method finished after 2213 ms.
+2025-12-16T22:08:20.2854649Z Site startup probe succeeded after 18.6855876 seconds.
+2025-12-16T22:08:29.3673869Z Site started.
+2025-12-16T22:08:49.4592561Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T22:08:49.5312615Z Stop and delete container. Retry count = 0
+2025-12-16T22:08:49.5397807Z Stopping container: 2ed1cc0deb5f_funtranslatorapizineb.
+2025-12-16T22:08:56.0977719Z Deleting container: 2ed1cc0deb5f_funtranslatorapizineb. Retry count = 0
+2025-12-16T22:08:56.4917817Z Container spec TerminationMessagePolicy  path 
+2025-12-16T22:08:56.4941827Z Container is terminated. Total time elapsed: 7015 ms.
+2025-12-16T22:08:56.4950223Z Site: funtranslatorapizineb stopped.
+2025-12-16T22:14:27.9531747Z Container start method called.
+2025-12-16T22:14:27.9533586Z Establishing network.
+2025-12-16T22:14:27.9623420Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T22:14:29.3962277Z Container is starting.
+2025-12-16T22:14:29.3965206Z Establishing user namespace if not established already.
+2025-12-16T22:14:29.3967003Z Establishing network if not established already.
+2025-12-16T22:14:29.3968381Z Mounting volumes.
+2025-12-16T22:14:29.4043715Z Nested mountpoint 
+2025-12-16T22:14:29.4711919Z Nested mountpoint volatile/logs
+2025-12-16T22:14:29.5094210Z Nested mountpoint 
+2025-12-16T22:14:29.5131979Z Nested mountpoint 
+2025-12-16T22:14:29.6300164Z Nested mountpoint 
+2025-12-16T22:14:29.7372320Z Creating container.
+2025-12-16T22:14:29.7433196Z Creating pipes for streaming container io.
+2025-12-16T22:14:29.7438718Z Creating stdout named pipe at /podr/container/pipe/7d0c047fe0f0_funtranslatorapizineb/stdout_11d72ea420ed423b93daa786d79133d9.
+2025-12-16T22:14:29.7549430Z Successfully created stdout named pipe at: /podr/container/pipe/7d0c047fe0f0_funtranslatorapizineb/stdout_11d72ea420ed423b93daa786d79133d9.
+2025-12-16T22:14:29.7551357Z Opening named pipe /podr/container/pipe/7d0c047fe0f0_funtranslatorapizineb/stdout_11d72ea420ed423b93daa786d79133d9 for reading in non-blocking mode.
+2025-12-16T22:14:29.7556719Z Successfully opened named pipe: /podr/container/pipe/7d0c047fe0f0_funtranslatorapizineb/stdout_11d72ea420ed423b93daa786d79133d9.
+2025-12-16T22:14:29.7558395Z Successfully removed non-blocking flag from /podr/container/pipe/7d0c047fe0f0_funtranslatorapizineb/stdout_11d72ea420ed423b93daa786d79133d9.
+2025-12-16T22:14:29.7560124Z Creating stderr named pipe at /podr/container/pipe/7d0c047fe0f0_funtranslatorapizineb/stderr_6a3678799e0d4c979afed85aeb0b9e34.
+2025-12-16T22:14:29.7562243Z Successfully created stderr named pipe at: /podr/container/pipe/7d0c047fe0f0_funtranslatorapizineb/stderr_6a3678799e0d4c979afed85aeb0b9e34.
+2025-12-16T22:14:29.7663579Z Opening named pipe /podr/container/pipe/7d0c047fe0f0_funtranslatorapizineb/stderr_6a3678799e0d4c979afed85aeb0b9e34 for reading in non-blocking mode.
+2025-12-16T22:14:29.7725105Z Successfully opened named pipe: /podr/container/pipe/7d0c047fe0f0_funtranslatorapizineb/stderr_6a3678799e0d4c979afed85aeb0b9e34.
+2025-12-16T22:14:29.7727227Z Successfully removed non-blocking flag from /podr/container/pipe/7d0c047fe0f0_funtranslatorapizineb/stderr_6a3678799e0d4c979afed85aeb0b9e34.
+2025-12-16T22:14:29.7733925Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T22:14:30.5645118Z Starting container: 7d0c047fe0f0_funtranslatorapizineb.
+2025-12-16T22:14:30.6794215Z Starting watchers and probes.
+2025-12-16T22:14:30.6800613Z Starting metrics collection.
+2025-12-16T22:14:30.6803912Z Container is running.
+2025-12-16T22:14:31.8904687Z Container start method finished after 3918 ms.
+2025-12-16T22:14:41.8905509Z Site startup probe succeeded after 9.9697078 seconds.
+2025-12-16T22:14:49.4629465Z Site started.
+2025-12-16T22:15:09.6136748Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T22:15:09.6417179Z Stop and delete container. Retry count = 0
+2025-12-16T22:15:09.6421307Z Stopping container: 550faf5717e6_funtranslatorapizineb.
+2025-12-16T22:15:15.4628054Z Deleting container: 550faf5717e6_funtranslatorapizineb. Retry count = 0
+2025-12-16T22:15:16.5591594Z Container spec TerminationMessagePolicy  path 
+2025-12-16T22:15:16.5627782Z Container is terminated. Total time elapsed: 6945 ms.
+2025-12-16T22:15:16.5630113Z Site: funtranslatorapizineb stopped.
+2025-12-16T22:15:22.3948494Z Container start method called.
+2025-12-16T22:15:22.3955229Z Establishing network.
+2025-12-16T22:15:22.3956629Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T22:15:22.7807360Z Container is starting.
+2025-12-16T22:15:22.7857658Z Establishing user namespace if not established already.
+2025-12-16T22:15:22.7868553Z Establishing network if not established already.
+2025-12-16T22:15:22.7939889Z Mounting volumes.
+2025-12-16T22:15:22.7941554Z Nested mountpoint 
+2025-12-16T22:15:22.8158853Z Nested mountpoint volatile/logs
+2025-12-16T22:15:22.9097115Z Nested mountpoint 
+2025-12-16T22:15:23.0265538Z Nested mountpoint 
+2025-12-16T22:15:23.1231142Z Nested mountpoint 
+2025-12-16T22:15:23.2019013Z Creating container.
+2025-12-16T22:15:23.2888300Z Creating pipes for streaming container io.
+2025-12-16T22:15:23.2890707Z Creating stdout named pipe at /podr/container/pipe/f71b0dfc7e00_funtranslatorapizineb/stdout_61da9c163c1849fcb9eda6185aec1814.
+2025-12-16T22:15:23.3349060Z Successfully created stdout named pipe at: /podr/container/pipe/f71b0dfc7e00_funtranslatorapizineb/stdout_61da9c163c1849fcb9eda6185aec1814.
+2025-12-16T22:15:23.3444839Z Opening named pipe /podr/container/pipe/f71b0dfc7e00_funtranslatorapizineb/stdout_61da9c163c1849fcb9eda6185aec1814 for reading in non-blocking mode.
+2025-12-16T22:15:23.3467049Z Successfully opened named pipe: /podr/container/pipe/f71b0dfc7e00_funtranslatorapizineb/stdout_61da9c163c1849fcb9eda6185aec1814.
+2025-12-16T22:15:23.3546532Z Successfully removed non-blocking flag from /podr/container/pipe/f71b0dfc7e00_funtranslatorapizineb/stdout_61da9c163c1849fcb9eda6185aec1814.
+2025-12-16T22:15:23.3564393Z Creating stderr named pipe at /podr/container/pipe/f71b0dfc7e00_funtranslatorapizineb/stderr_0709d392dcb244fc94ab812b47d84c9e.
+2025-12-16T22:15:23.3721438Z Successfully created stderr named pipe at: /podr/container/pipe/f71b0dfc7e00_funtranslatorapizineb/stderr_0709d392dcb244fc94ab812b47d84c9e.
+2025-12-16T22:15:23.3733589Z Opening named pipe /podr/container/pipe/f71b0dfc7e00_funtranslatorapizineb/stderr_0709d392dcb244fc94ab812b47d84c9e for reading in non-blocking mode.
+2025-12-16T22:15:23.3747351Z Successfully opened named pipe: /podr/container/pipe/f71b0dfc7e00_funtranslatorapizineb/stderr_0709d392dcb244fc94ab812b47d84c9e.
+2025-12-16T22:15:23.3757588Z Successfully removed non-blocking flag from /podr/container/pipe/f71b0dfc7e00_funtranslatorapizineb/stderr_0709d392dcb244fc94ab812b47d84c9e.
+2025-12-16T22:15:23.3843374Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T22:15:24.0931930Z Starting container: f71b0dfc7e00_funtranslatorapizineb.
+2025-12-16T22:15:24.1723244Z Starting watchers and probes.
+2025-12-16T22:15:24.1792416Z Starting metrics collection.
+2025-12-16T22:15:24.1794408Z Container is running.
+2025-12-16T22:15:24.3964143Z Container start method finished after 2000 ms.
+2025-12-16T22:15:33.5987092Z Site startup probe succeeded after 9.0814098 seconds.
+2025-12-16T22:15:42.2713699Z Site started.
+2025-12-16T22:16:02.3539692Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T22:16:02.3921442Z Stop and delete container. Retry count = 0
+2025-12-16T22:16:02.3923504Z Stopping container: 7d0c047fe0f0_funtranslatorapizineb.
+2025-12-16T22:16:07.5769974Z Deleting container: 7d0c047fe0f0_funtranslatorapizineb. Retry count = 0
+2025-12-16T22:16:07.8656855Z Container spec TerminationMessagePolicy  path 
+2025-12-16T22:16:07.8671501Z Container is terminated. Total time elapsed: 5510 ms.
+2025-12-16T22:16:07.8672726Z Site: funtranslatorapizineb stopped.
+2025-12-16T22:49:31.8738126Z Container start method called.
+2025-12-16T22:49:31.8825668Z Establishing network.
+2025-12-16T22:49:31.8827190Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T22:49:39.4518222Z Container is starting.
+2025-12-16T22:49:39.4524237Z Establishing user namespace if not established already.
+2025-12-16T22:49:39.4527225Z Establishing network if not established already.
+2025-12-16T22:49:39.4528749Z Mounting volumes.
+2025-12-16T22:49:39.4532263Z Nested mountpoint 
+2025-12-16T22:49:39.5979176Z Nested mountpoint volatile/logs
+2025-12-16T22:49:39.6176236Z Nested mountpoint 
+2025-12-16T22:49:39.8874531Z Nested mountpoint 
+2025-12-16T22:49:39.9158384Z Nested mountpoint 
+2025-12-16T22:49:40.0536381Z Creating container.
+2025-12-16T22:49:40.0552907Z Creating pipes for streaming container io.
+2025-12-16T22:49:40.0642578Z Creating stdout named pipe at /podr/container/pipe/49b0909d0d53_funtranslatorapizineb/stdout_df9bcad9500144fa916b60fd98033bfc.
+2025-12-16T22:49:40.0716585Z Successfully created stdout named pipe at: /podr/container/pipe/49b0909d0d53_funtranslatorapizineb/stdout_df9bcad9500144fa916b60fd98033bfc.
+2025-12-16T22:49:40.0736651Z Opening named pipe /podr/container/pipe/49b0909d0d53_funtranslatorapizineb/stdout_df9bcad9500144fa916b60fd98033bfc for reading in non-blocking mode.
+2025-12-16T22:49:40.0815751Z Successfully opened named pipe: /podr/container/pipe/49b0909d0d53_funtranslatorapizineb/stdout_df9bcad9500144fa916b60fd98033bfc.
+2025-12-16T22:49:40.0833862Z Successfully removed non-blocking flag from /podr/container/pipe/49b0909d0d53_funtranslatorapizineb/stdout_df9bcad9500144fa916b60fd98033bfc.
+2025-12-16T22:49:40.0898041Z Creating stderr named pipe at /podr/container/pipe/49b0909d0d53_funtranslatorapizineb/stderr_64033b6018104ccba33f3d464b088c47.
+2025-12-16T22:49:40.0908881Z Successfully created stderr named pipe at: /podr/container/pipe/49b0909d0d53_funtranslatorapizineb/stderr_64033b6018104ccba33f3d464b088c47.
+2025-12-16T22:49:40.0919575Z Opening named pipe /podr/container/pipe/49b0909d0d53_funtranslatorapizineb/stderr_64033b6018104ccba33f3d464b088c47 for reading in non-blocking mode.
+2025-12-16T22:49:40.0987730Z Successfully opened named pipe: /podr/container/pipe/49b0909d0d53_funtranslatorapizineb/stderr_64033b6018104ccba33f3d464b088c47.
+2025-12-16T22:49:40.0994368Z Successfully removed non-blocking flag from /podr/container/pipe/49b0909d0d53_funtranslatorapizineb/stderr_64033b6018104ccba33f3d464b088c47.
+2025-12-16T22:49:40.1010213Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T22:49:41.1897883Z Starting container: 49b0909d0d53_funtranslatorapizineb.
+2025-12-16T22:49:41.3367987Z Starting watchers and probes.
+2025-12-16T22:49:41.3462011Z Starting metrics collection.
+2025-12-16T22:49:41.3528057Z Container is running.
+2025-12-16T22:49:41.5990365Z Container start method finished after 9723 ms.
+2025-12-16T22:50:19.5675462Z Site startup probe succeeded after 37.7454992 seconds.
+2025-12-16T22:50:35.4924171Z Site started.
+2025-12-16T22:50:56.1933179Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T22:50:56.8616284Z Stop and delete container. Retry count = 0
+2025-12-16T22:50:56.8673166Z Stopping container: f71b0dfc7e00_funtranslatorapizineb.
+2025-12-16T22:51:04.9320338Z Deleting container: f71b0dfc7e00_funtranslatorapizineb. Retry count = 0
+2025-12-16T22:51:06.1078725Z Container spec TerminationMessagePolicy  path 
+2025-12-16T22:51:06.1384377Z Container is terminated. Total time elapsed: 9914 ms.
+2025-12-16T22:51:06.2533698Z Site: funtranslatorapizineb stopped.
+2025-12-16T22:51:17.0175180Z Container start method called.
+2025-12-16T22:51:17.0648832Z Establishing network.
+2025-12-16T22:51:17.0716788Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T22:51:17.9608451Z Container is starting.
+2025-12-16T22:51:17.9610254Z Establishing user namespace if not established already.
+2025-12-16T22:51:17.9611216Z Establishing network if not established already.
+2025-12-16T22:51:17.9612410Z Mounting volumes.
+2025-12-16T22:51:17.9980119Z Nested mountpoint site/wwwroot
+2025-12-16T22:51:18.1450908Z Nested mountpoint volatile/logs
+2025-12-16T22:51:18.3664456Z Nested mountpoint 
+2025-12-16T22:51:18.5818251Z Nested mountpoint 
+2025-12-16T22:51:18.9472727Z Nested mountpoint 
+2025-12-16T22:51:19.0728472Z Nested mountpoint 
+2025-12-16T22:51:20.0495480Z Creating container.
+2025-12-16T22:51:20.0587732Z Creating pipes for streaming container io.
+2025-12-16T22:51:20.0791871Z Creating stdout named pipe at /podr/container/pipe/7fa65a619ec2_funtranslatorapizineb/stdout_01d6a9910e37451cbb304037b7a2e844.
+2025-12-16T22:51:20.1431500Z Successfully created stdout named pipe at: /podr/container/pipe/7fa65a619ec2_funtranslatorapizineb/stdout_01d6a9910e37451cbb304037b7a2e844.
+2025-12-16T22:51:20.1531149Z Opening named pipe /podr/container/pipe/7fa65a619ec2_funtranslatorapizineb/stdout_01d6a9910e37451cbb304037b7a2e844 for reading in non-blocking mode.
+2025-12-16T22:51:20.1620530Z Successfully opened named pipe: /podr/container/pipe/7fa65a619ec2_funtranslatorapizineb/stdout_01d6a9910e37451cbb304037b7a2e844.
+2025-12-16T22:51:20.1636854Z Successfully removed non-blocking flag from /podr/container/pipe/7fa65a619ec2_funtranslatorapizineb/stdout_01d6a9910e37451cbb304037b7a2e844.
+2025-12-16T22:51:20.2007741Z Creating stderr named pipe at /podr/container/pipe/7fa65a619ec2_funtranslatorapizineb/stderr_2ad510058aa946f2a37047c82e33fd5f.
+2025-12-16T22:51:20.2013572Z Successfully created stderr named pipe at: /podr/container/pipe/7fa65a619ec2_funtranslatorapizineb/stderr_2ad510058aa946f2a37047c82e33fd5f.
+2025-12-16T22:51:20.2015529Z Opening named pipe /podr/container/pipe/7fa65a619ec2_funtranslatorapizineb/stderr_2ad510058aa946f2a37047c82e33fd5f for reading in non-blocking mode.
+2025-12-16T22:51:20.2019345Z Successfully opened named pipe: /podr/container/pipe/7fa65a619ec2_funtranslatorapizineb/stderr_2ad510058aa946f2a37047c82e33fd5f.
+2025-12-16T22:51:20.2023626Z Successfully removed non-blocking flag from /podr/container/pipe/7fa65a619ec2_funtranslatorapizineb/stderr_2ad510058aa946f2a37047c82e33fd5f.
+2025-12-16T22:51:20.2028126Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T22:51:22.6119311Z Starting container: 7fa65a619ec2_funtranslatorapizineb.
+2025-12-16T22:51:23.6352036Z Starting watchers and probes.
+2025-12-16T22:51:23.6367559Z Starting metrics collection.
+2025-12-16T22:51:23.6368925Z Container is running.
+2025-12-16T22:51:25.2281362Z Container start method finished after 8209 ms.
+2025-12-16T22:51:41.7854616Z Site startup probe succeeded after 16.4793967 seconds.
+2025-12-16T22:51:51.8847517Z Site is running with deployment version: e1eea651-69c7-488e-a88e-b31066bb725c
+2025-12-16T22:51:51.8852428Z Site started.
+2025-12-16T22:52:12.0049813Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T22:52:12.1859526Z Stop and delete container. Retry count = 0
+2025-12-16T22:52:12.1871077Z Stopping container: 49b0909d0d53_funtranslatorapizineb.
+2025-12-16T22:52:18.1128745Z Deleting container: 49b0909d0d53_funtranslatorapizineb. Retry count = 0
+2025-12-16T22:52:19.0208085Z Container spec TerminationMessagePolicy  path 
+2025-12-16T22:52:19.0233153Z Container is terminated. Total time elapsed: 7008 ms.
+2025-12-16T22:52:19.0234670Z Site: funtranslatorapizineb stopped.
+2025-12-16T22:54:45.5626317Z Container start method called.
+2025-12-16T22:54:45.5827708Z Establishing network.
+2025-12-16T22:54:45.5830012Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T22:54:47.8723022Z Container is starting.
+2025-12-16T22:54:47.8791355Z Establishing user namespace if not established already.
+2025-12-16T22:54:47.8796780Z Establishing network if not established already.
+2025-12-16T22:54:47.8798182Z Mounting volumes.
+2025-12-16T22:54:47.8816463Z Nested mountpoint site/wwwroot
+2025-12-16T22:54:47.9269005Z Nested mountpoint volatile/logs
+2025-12-16T22:54:47.9392324Z Nested mountpoint 
+2025-12-16T22:54:48.1817905Z Nested mountpoint 
+2025-12-16T22:54:48.2171669Z Nested mountpoint 
+2025-12-16T22:54:48.4044903Z Nested mountpoint 
+2025-12-16T22:54:48.8276865Z Creating container.
+2025-12-16T22:54:48.8278012Z Creating pipes for streaming container io.
+2025-12-16T22:54:48.8279110Z Creating stdout named pipe at /podr/container/pipe/bc444ff964c5_funtranslatorapizineb/stdout_c5cb0928aec8455fbe83ce71a30731ae.
+2025-12-16T22:54:48.8376912Z Successfully created stdout named pipe at: /podr/container/pipe/bc444ff964c5_funtranslatorapizineb/stdout_c5cb0928aec8455fbe83ce71a30731ae.
+2025-12-16T22:54:48.8378831Z Opening named pipe /podr/container/pipe/bc444ff964c5_funtranslatorapizineb/stdout_c5cb0928aec8455fbe83ce71a30731ae for reading in non-blocking mode.
+2025-12-16T22:54:48.8380775Z Successfully opened named pipe: /podr/container/pipe/bc444ff964c5_funtranslatorapizineb/stdout_c5cb0928aec8455fbe83ce71a30731ae.
+2025-12-16T22:54:48.8451311Z Successfully removed non-blocking flag from /podr/container/pipe/bc444ff964c5_funtranslatorapizineb/stdout_c5cb0928aec8455fbe83ce71a30731ae.
+2025-12-16T22:54:48.8476747Z Creating stderr named pipe at /podr/container/pipe/bc444ff964c5_funtranslatorapizineb/stderr_9b20de2e468d42ff89ba39bfa167c56a.
+2025-12-16T22:54:48.8776610Z Successfully created stderr named pipe at: /podr/container/pipe/bc444ff964c5_funtranslatorapizineb/stderr_9b20de2e468d42ff89ba39bfa167c56a.
+2025-12-16T22:54:48.9248804Z Opening named pipe /podr/container/pipe/bc444ff964c5_funtranslatorapizineb/stderr_9b20de2e468d42ff89ba39bfa167c56a for reading in non-blocking mode.
+2025-12-16T22:54:48.9330419Z Successfully opened named pipe: /podr/container/pipe/bc444ff964c5_funtranslatorapizineb/stderr_9b20de2e468d42ff89ba39bfa167c56a.
+2025-12-16T22:54:48.9356252Z Successfully removed non-blocking flag from /podr/container/pipe/bc444ff964c5_funtranslatorapizineb/stderr_9b20de2e468d42ff89ba39bfa167c56a.
+2025-12-16T22:54:49.0130099Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T22:54:50.2116603Z Starting container: bc444ff964c5_funtranslatorapizineb.
+2025-12-16T22:54:50.3366307Z Starting watchers and probes.
+2025-12-16T22:54:50.3474671Z Starting metrics collection.
+2025-12-16T22:54:50.3546848Z Container is running.
+2025-12-16T22:54:50.7916869Z Container start method finished after 5219 ms.
+2025-12-16T22:55:02.3561341Z Site startup probe succeeded after 11.4553753 seconds.
+2025-12-16T22:55:14.2122345Z Site is running with deployment version: 47561d2c-d8d8-4197-8f01-16410e9c39b3
+2025-12-16T22:55:14.2141192Z Site started.
+2025-12-16T22:55:34.3294896Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T22:55:34.3727670Z Stop and delete container. Retry count = 0
+2025-12-16T22:55:34.3802565Z Stopping container: 7fa65a619ec2_funtranslatorapizineb.
+2025-12-16T22:55:39.6175837Z Deleting container: 7fa65a619ec2_funtranslatorapizineb. Retry count = 0
+2025-12-16T22:55:39.9911518Z Container spec TerminationMessagePolicy  path 
+2025-12-16T22:55:39.9917683Z Container is terminated. Total time elapsed: 5660 ms.
+2025-12-16T22:55:39.9926940Z Site: funtranslatorapizineb stopped.
+2025-12-16T22:58:09.3686150Z Container start method called.
+2025-12-16T22:58:09.6119297Z Establishing network.
+2025-12-16T22:58:09.6123666Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T22:58:13.3963948Z Container is starting.
+2025-12-16T22:58:13.3987152Z Establishing user namespace if not established already.
+2025-12-16T22:58:13.4555789Z Establishing network if not established already.
+2025-12-16T22:58:13.4557774Z Mounting volumes.
+2025-12-16T22:58:13.4668163Z Nested mountpoint site/wwwroot
+2025-12-16T22:58:13.5062214Z Nested mountpoint volatile/logs
+2025-12-16T22:58:14.1473670Z Nested mountpoint 
+2025-12-16T22:58:14.2338297Z Nested mountpoint 
+2025-12-16T22:58:14.2755880Z Nested mountpoint 
+2025-12-16T22:58:14.6439007Z Nested mountpoint 
+2025-12-16T22:58:16.6631984Z Creating container.
+2025-12-16T22:58:16.8090308Z Creating pipes for streaming container io.
+2025-12-16T22:58:16.8255820Z Creating stdout named pipe at /podr/container/pipe/ca5297c5f510_funtranslatorapizineb/stdout_f04ad4b5ad024b5cbc3293acd06f1274.
+2025-12-16T22:58:16.8287142Z Successfully created stdout named pipe at: /podr/container/pipe/ca5297c5f510_funtranslatorapizineb/stdout_f04ad4b5ad024b5cbc3293acd06f1274.
+2025-12-16T22:58:16.8289966Z Opening named pipe /podr/container/pipe/ca5297c5f510_funtranslatorapizineb/stdout_f04ad4b5ad024b5cbc3293acd06f1274 for reading in non-blocking mode.
+2025-12-16T22:58:16.8668643Z Successfully opened named pipe: /podr/container/pipe/ca5297c5f510_funtranslatorapizineb/stdout_f04ad4b5ad024b5cbc3293acd06f1274.
+2025-12-16T22:58:16.8671050Z Successfully removed non-blocking flag from /podr/container/pipe/ca5297c5f510_funtranslatorapizineb/stdout_f04ad4b5ad024b5cbc3293acd06f1274.
+2025-12-16T22:58:16.8672413Z Creating stderr named pipe at /podr/container/pipe/ca5297c5f510_funtranslatorapizineb/stderr_9ff561fbc69449cdb5b18d6b8862f0bf.
+2025-12-16T22:58:16.8674338Z Successfully created stderr named pipe at: /podr/container/pipe/ca5297c5f510_funtranslatorapizineb/stderr_9ff561fbc69449cdb5b18d6b8862f0bf.
+2025-12-16T22:58:16.8675617Z Opening named pipe /podr/container/pipe/ca5297c5f510_funtranslatorapizineb/stderr_9ff561fbc69449cdb5b18d6b8862f0bf for reading in non-blocking mode.
+2025-12-16T22:58:16.8676821Z Successfully opened named pipe: /podr/container/pipe/ca5297c5f510_funtranslatorapizineb/stderr_9ff561fbc69449cdb5b18d6b8862f0bf.
+2025-12-16T22:58:16.8677761Z Successfully removed non-blocking flag from /podr/container/pipe/ca5297c5f510_funtranslatorapizineb/stderr_9ff561fbc69449cdb5b18d6b8862f0bf.
+2025-12-16T22:58:16.8683211Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T22:58:20.0301427Z Starting container: ca5297c5f510_funtranslatorapizineb.
+2025-12-16T22:58:20.2466462Z Starting watchers and probes.
+2025-12-16T22:58:20.2909499Z Starting metrics collection.
+2025-12-16T22:58:20.3332300Z Container is running.
+2025-12-16T22:58:20.6814020Z Container start method finished after 11312 ms.
+2025-12-16T22:58:53.1374809Z Site startup probe succeeded after 32.3985032 seconds.
+2025-12-16T22:59:08.0920599Z Site is running with deployment version: fc4b2ab0-d707-405f-b31c-19b5b4ecf3e5
+2025-12-16T22:59:08.0996148Z Site started.
+2025-12-16T22:59:28.4240358Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T22:59:28.9941825Z Stop and delete container. Retry count = 0
+2025-12-16T22:59:28.9945567Z Stopping container: bc444ff964c5_funtranslatorapizineb.
+2025-12-16T22:59:33.7380754Z Deleting container: bc444ff964c5_funtranslatorapizineb. Retry count = 0
+2025-12-16T22:59:34.1382087Z Container spec TerminationMessagePolicy  path 
+2025-12-16T22:59:34.1396441Z Container is terminated. Total time elapsed: 5703 ms.
+2025-12-16T22:59:34.1462145Z Site: funtranslatorapizineb stopped.
+2025-12-16T22:59:41.5559388Z Container start method called.
+2025-12-16T22:59:41.5653122Z Establishing network.
+2025-12-16T22:59:41.5829900Z Pulling image: azure-functions/node:4-node24-appservice-stage5.
+2025-12-16T22:59:42.1841495Z Container is starting.
+2025-12-16T22:59:42.1941165Z Establishing user namespace if not established already.
+2025-12-16T22:59:42.2003382Z Establishing network if not established already.
+2025-12-16T22:59:42.2021704Z Mounting volumes.
+2025-12-16T22:59:42.2035728Z Nested mountpoint site/wwwroot
+2025-12-16T22:59:42.3074141Z Nested mountpoint volatile/logs
+2025-12-16T22:59:42.3362977Z Nested mountpoint 
+2025-12-16T22:59:42.4690148Z Nested mountpoint 
+2025-12-16T22:59:42.4698941Z Nested mountpoint 
+2025-12-16T22:59:42.7555522Z Nested mountpoint 
+2025-12-16T22:59:43.1537206Z Creating container.
+2025-12-16T22:59:43.1612514Z Creating pipes for streaming container io.
+2025-12-16T22:59:43.1625923Z Creating stdout named pipe at /podr/container/pipe/1abefa744d2d_funtranslatorapizineb/stdout_4e643a72f9b64e2d878c13ea2e92edda.
+2025-12-16T22:59:43.1637650Z Successfully created stdout named pipe at: /podr/container/pipe/1abefa744d2d_funtranslatorapizineb/stdout_4e643a72f9b64e2d878c13ea2e92edda.
+2025-12-16T22:59:43.1639890Z Opening named pipe /podr/container/pipe/1abefa744d2d_funtranslatorapizineb/stdout_4e643a72f9b64e2d878c13ea2e92edda for reading in non-blocking mode.
+2025-12-16T22:59:43.1707067Z Successfully opened named pipe: /podr/container/pipe/1abefa744d2d_funtranslatorapizineb/stdout_4e643a72f9b64e2d878c13ea2e92edda.
+2025-12-16T22:59:43.1713968Z Successfully removed non-blocking flag from /podr/container/pipe/1abefa744d2d_funtranslatorapizineb/stdout_4e643a72f9b64e2d878c13ea2e92edda.
+2025-12-16T22:59:43.1723676Z Creating stderr named pipe at /podr/container/pipe/1abefa744d2d_funtranslatorapizineb/stderr_58380fe1936342499c732891615f8161.
+2025-12-16T22:59:43.1729446Z Successfully created stderr named pipe at: /podr/container/pipe/1abefa744d2d_funtranslatorapizineb/stderr_58380fe1936342499c732891615f8161.
+2025-12-16T22:59:43.1736445Z Opening named pipe /podr/container/pipe/1abefa744d2d_funtranslatorapizineb/stderr_58380fe1936342499c732891615f8161 for reading in non-blocking mode.
+2025-12-16T22:59:43.1738443Z Successfully opened named pipe: /podr/container/pipe/1abefa744d2d_funtranslatorapizineb/stderr_58380fe1936342499c732891615f8161.
+2025-12-16T22:59:43.1740379Z Successfully removed non-blocking flag from /podr/container/pipe/1abefa744d2d_funtranslatorapizineb/stderr_58380fe1936342499c732891615f8161.
+2025-12-16T22:59:43.1830442Z Creating container with image: azure-functions/node:4-node24-appservice-stage5 from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/azure-functions/node:4-node24-appservice-stage5
+2025-12-16T22:59:44.2705666Z Starting container: 1abefa744d2d_funtranslatorapizineb.
+2025-12-16T22:59:44.3664574Z Starting watchers and probes.
+2025-12-16T22:59:44.3777187Z Starting metrics collection.
+2025-12-16T22:59:44.3857749Z Container is running.
+2025-12-16T22:59:44.9014215Z Container start method finished after 3338 ms.
+2025-12-16T22:59:56.0003313Z Site startup probe succeeded after 11.059367 seconds.
+2025-12-16T23:00:05.6817348Z Site is running with deployment version: fc4b2ab0-d707-405f-b31c-19b5b4ecf3e5
+2025-12-16T23:00:05.7083955Z Site started.
+2025-12-16T23:00:26.0224112Z Container is terminating. Grace period: 5 seconds.
+2025-12-16T23:00:26.0424430Z Stop and delete container. Retry count = 0
+2025-12-16T23:00:26.0439212Z Stopping container: ca5297c5f510_funtranslatorapizineb.
+2025-12-16T23:00:31.2626110Z Deleting container: ca5297c5f510_funtranslatorapizineb. Retry count = 0
+2025-12-16T23:00:31.5361452Z Container spec TerminationMessagePolicy  path 
+2025-12-16T23:00:31.5438016Z Container is terminated. Total time elapsed: 5514 ms.
+2025-12-16T23:00:31.5441469Z Site: funtranslatorapizineb stopped.

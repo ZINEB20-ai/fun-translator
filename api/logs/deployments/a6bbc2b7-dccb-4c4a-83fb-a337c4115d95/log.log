@@ -1,0 +1,9 @@
+2025-12-22T16:49:35.3739884Z,Updating submodules.,db291524-063a-481b-a3bc-97e772b43788,0
+2025-12-22T16:49:36.5242560Z,Preparing deployment for commit id 'a6bbc2b7-d'.,ca591ad7-9b10-4eca-837f-e8935ce29234,0
+2025-12-22T16:49:36.8808553Z,PreDeployment: context.CleanOutputPath False,928c050c-af01-429f-9648-b71449269dc0,0
+2025-12-22T16:49:37.0617970Z,PreDeployment: context.OutputPath /home/site/wwwroot,d4469810-23a5-4eeb-9a0c-bc08d0fe0c77,0
+2025-12-22T16:49:38.0973592Z,Skipping build. Project type: Run-From-Zip,af390b5f-aa3d-4908-8021-5f792a4a34d2,0
+2025-12-22T16:49:38.2463729Z,Skipping post build. Project type: Run-From-Zip,effe4511-97f5-4b31-bcb6-88d5e045a216,0
+2025-12-22T16:49:38.3928085Z,Triggering recycle (preview mode disabled).,e3b35ad9-e769-485c-92e5-e944fdbfaab4,0
+2025-12-22T16:49:38.6392929Z,Updating /home/data/SitePackages/packagename.txt with deployment 20251222164931.zip,4489f415-806b-44a2-81cf-e24862020cab,0
+2025-12-22T16:49:38.8240529Z,Deployment successful. deployer = az_cli_functions deploymentPath = Functions App ZipDeploy. Run from package.,f3c43f50-aa39-4284-8a6e-4235401c9cc1,0

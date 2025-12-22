@@ -5,8 +5,8 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "methods": [ "post" ],
-      "route": "translate"
+      "methods": [ "get" ],
+      "route": "ping"
     },
     {
       "type": "http",

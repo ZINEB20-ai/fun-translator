@@ -1,0 +1,9 @@
+2025-12-22T15:08:31.5506361Z,Updating submodules.,b8cfd4a2-127e-4e5e-af85-adcf88db0020,0
+2025-12-22T15:08:32.7696870Z,Preparing deployment for commit id 'ea683ce1-f'.,f437fa4b-dc45-47be-ac6a-8a0b035d4111,0
+2025-12-22T15:08:33.2720410Z,PreDeployment: context.CleanOutputPath False,bd14850b-d93b-458b-9243-e261fd8dc1e3,0
+2025-12-22T15:08:33.4700622Z,PreDeployment: context.OutputPath /home/site/wwwroot,c2df02b5-c8c9-424b-b9ec-86fdcf4bd4e8,0
+2025-12-22T15:08:33.6865512Z,Skipping build. Project type: Run-From-Zip,f1718e3c-b34f-4094-9062-1579fa582bfc,0
+2025-12-22T15:08:33.9179260Z,Skipping post build. Project type: Run-From-Zip,313552e7-41f6-423d-8504-01a84c154a69,0
+2025-12-22T15:08:34.2132252Z,Triggering recycle (preview mode disabled).,1dfc0734-b634-4271-b5b8-f2c5ee03e753,0
+2025-12-22T15:08:34.5091414Z,Updating /home/data/SitePackages/packagename.txt with deployment 20251222150819.zip,194060d9-bac7-4512-a975-a5e146a4c92a,0
+2025-12-22T15:08:34.6716520Z,Deployment successful. deployer = Push-Deployer deploymentPath = Functions App ZipDeploy. Run from package.,8e6b0d55-0163-4b78-a179-d4c1f4f5dd11,0

@@ -1,5 +1,5 @@
 {
-  "dependencies": {
-    "@azure/cosmos": "^4.9.0"
-  }
+  "name": "fun-translator-api",
+  "version": "1.0.0",
+  "private": true
 }

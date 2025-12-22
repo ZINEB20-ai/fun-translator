@@ -1,0 +1,11 @@
+2025-12-22T15:08:28  Fetching changes.
+2025-12-22T15:08:28    Starting  LocalZipHandler
+2025-12-22T15:08:32  Updating submodules.
+2025-12-22T15:08:32  Preparing deployment for commit id 'ea683ce1-f'.
+2025-12-22T15:08:33  PreDeployment: context.CleanOutputPath False
+2025-12-22T15:08:33  PreDeployment: context.OutputPath /home/site/wwwroot
+2025-12-22T15:08:33  Skipping build. Project type: Run-From-Zip
+2025-12-22T15:08:33  Skipping post build. Project type: Run-From-Zip
+2025-12-22T15:08:34  Triggering recycle (preview mode disabled).
+2025-12-22T15:08:34  Updating /home/data/SitePackages/packagename.txt with deployment 20251222150819.zip
+2025-12-22T15:08:34  Deployment successful. deployer = Push-Deployer deploymentPath = Functions App ZipDeploy. Run from package.

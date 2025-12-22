@@ -1,0 +1,31 @@
+<step title="BackgroundTrace" date="2025-12-22T16:54:24.340" instance="f0e560" url="/api/zipdeploy" method="POST" >
+  <step title="Cleanup Xml Logs" date="2025-12-22T16:54:24.346" /><!-- duration: 9ms -->
+  <step title="Creating temporary deployment - FetchDeploymentManager" date="2025-12-22T16:54:24.432" /><!-- duration: 2ms -->
+  <step title="Creating temporary deployment" date="2025-12-22T16:54:24.439" /><!-- duration: 182ms -->
+  <step title="Performing fetch based deployment" date="2025-12-22T16:54:24.690" >
+    <step title="Deployment timer started" date="2025-12-22T16:54:28.092" >
+      <step title="DeploymentManager.Deploy(id:7df51c50-85ba-4841-b648-bebeac9a05ed)" date="2025-12-22T16:54:28.098" >
+        <step title="Collecting changeset information" date="2025-12-22T16:54:28.134" /><!-- duration: 159ms -->
+        <step title="Updating submodules" date="2025-12-22T16:54:28.297" /><!-- duration: 1360ms -->
+        <step title="Determining deployment builder" date="2025-12-22T16:54:29.962" >
+          <step title="Builder is RunFromZipSiteBuilder" date="2025-12-22T16:54:29.993" /><!-- duration: 20ms -->
+        </step><!-- duration: 55ms -->
+        <step title="PreDeployment: context.CleanOutputPath False" date="2025-12-22T16:54:30.052" >
+          <step title="PreDeployment: context.OutputPath /home/site/wwwroot" date="2025-12-22T16:54:30.204" >
+            <step title="Building" date="2025-12-22T16:54:30.407" >
+              <step title="Triggering recycle (preview mode disabled)." date="2025-12-22T16:54:30.931" /><!-- duration: 8ms -->
+              <step title="Modified file to trigger a restart of the app container." date="2025-12-22T16:54:30.985" /><!-- duration: 6ms -->
+              <step title="Skip function trigger and logicapp sync because sku (Basic) is not dynamic (consumption plan)." date="2025-12-22T16:54:31.006" /><!-- duration: 20ms -->
+              <step title="Purge deployment items" date="2025-12-22T16:54:33.937" >
+                <step title="Remove 2a8c610e-, Success, received at 12/18/2025 10:13:18" date="2025-12-22T16:54:34.152" /><!-- duration: 39ms -->
+              </step><!-- duration: 309ms -->
+            </step><!-- duration: 4049ms -->
+          </step><!-- duration: 4262ms -->
+          <step title="Cleaning up temp files" date="2025-12-22T16:54:34.475" /><!-- duration: 66ms -->
+          <step title="Cleaning up temp files" date="2025-12-22T16:54:34.589" /><!-- duration: 550ms -->
+          <step title="Reloading status file with latest updates" date="2025-12-22T16:54:35.279" >
+            <step title="WebHooksManager.PublishEventAsync: PostDeployment" date="2025-12-22T16:54:35.363" /><!-- duration: 234ms -->
+          </step><!-- duration: 322ms -->
+          <step title="Cleaning up temporary deployment - fetch deployment was successful" date="2025-12-22T16:54:35.620" /><!-- duration: 35ms -->
+        </step><!-- duration: 5697ms -->
+      </step><!-- duration: 7665ms -->

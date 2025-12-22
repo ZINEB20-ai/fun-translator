@@ -1,0 +1,6 @@
+<step title="Incoming Request" date="2025-12-22T15:03:17.962" instance="f0e560" url="/logstream" method="GET" type="request" pid="768,1,24" Host="funtranslatorapizineb.scm.azurewebsites.net" User-Agent="AZURECLI/2.81.0 (HOMEBREW)" Accept-Encoding="identity" Authorization="Bea..." x-ms-client-request-id="535229d6-df47-11f0-a4f7-acde48001122" X-ARR-LOG-ID="535229d6-df47-11f0-a4f7-acde48001122" CLIENT-IP="197.230.166.242:62877" X-SITE-DEPLOYMENT-ID="funtranslatorapizineb" WAS-DEFAULT-HOSTNAME="funtranslatorapizineb.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/logstream" X-Client-IP="197.230.166.242" X-Client-Port="62877" >
+  <step title="Cleanup Xml Logs" date="2025-12-22T15:03:17.980" /><!-- duration: 524ms -->
+  <step title="LogStreamHandlerMiddleware.Invoke" date="2025-12-22T15:03:18.669" /><!-- duration: 172ms -->
+  <step title="Error occurred" date="2025-12-22T15:05:18.842" type="error" text="LogStreamManager: ProcessRequest end" /><!-- duration: 5ms -->
+  <step title="Outgoing response" date="2025-12-22T15:05:18.853" type="response" statusCode="200" statusText="OK" /><!-- duration: 2ms -->
+</step><!-- duration: 120896ms -->

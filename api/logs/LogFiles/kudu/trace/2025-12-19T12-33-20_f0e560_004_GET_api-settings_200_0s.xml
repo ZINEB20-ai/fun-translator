@@ -1,0 +1,4 @@
+<step title="Incoming Request" date="2025-12-19T12:33:20.790" instance="f0e560" url="/api/settings" method="GET" type="request" pid="770,1,83" Host="funtranslatorapizineb.scm.azurewebsites.net" User-Agent="functions-core-tools/4.6.0" Authorization="Bea..." X-ARR-LOG-ID="7cbd81c4-9797-459e-82f9-6241ab634977" CLIENT-IP="196.200.151.21:27077" X-SITE-DEPLOYMENT-ID="funtranslatorapizineb" WAS-DEFAULT-HOSTNAME="funtranslatorapizineb.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.2" X-WAWS-Unencoded-URL="/api/settings" X-Client-IP="196.200.151.21" X-Client-Port="27077" >
+  <step title="Cleanup Xml Logs" date="2025-12-19T12:33:20.817" /><!-- duration: 33ms -->
+  <step title="Outgoing response" date="2025-12-19T12:33:21.176" type="response" statusCode="200" statusText="OK" /><!-- duration: 2ms -->
+</step><!-- duration: 390ms -->

@@ -1,0 +1,43 @@
+<step title="Incoming Request" date="2025-12-22T15:08:18.941" instance="f0e560" url="/api/zipdeploy" method="POST" type="request" pid="768,1,23" Host="funtranslatorapizineb.scm.azurewebsites.net" User-Agent="functions-core-tools/4.6.0" Authorization="Bea..." Content-Type="application/zip" If-Match="*" Content-Length="9678429" X-ARR-LOG-ID="add17cb1-9f12-44ea-a79e-a67703407966" CLIENT-IP="197.230.166.242:55709" X-SITE-DEPLOYMENT-ID="funtranslatorapizineb" WAS-DEFAULT-HOSTNAME="funtranslatorapizineb.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.2" X-WAWS-Unencoded-URL="/api/zipdeploy" X-Client-IP="197.230.166.242" X-Client-Port="55709" >
+  <step title="Cleanup Xml Logs" date="2025-12-22T15:08:18.950" /><!-- duration: 10ms -->
+  <step title="ZipPushDeploy" date="2025-12-22T15:08:19.253" >
+    <step title="Functions App ZipDeploy. Run from package." date="2025-12-22T15:08:19.261" /><!-- duration: 2ms -->
+    <step title="Starting PushDeployAsync" date="2025-12-22T15:08:19.267" /><!-- duration: 2ms -->
+    <step title="WEBSITE_RUN_FROM_PACKAGE is set to 1. Writing zip to SitePackagesPath" date="2025-12-22T15:08:19.276" /><!-- duration: 10ms -->
+    <step title="Copying zip to SitePackages /home/data/SitePackages/20251222150819.zip from request body" date="2025-12-22T15:08:19.427" /><!-- duration: 26ms -->
+    <step title="Writing multipart request body to /home/data/SitePackages/20251222150819.zip" date="2025-12-22T15:08:19.516" /><!-- duration: 10ms -->
+    <step title="Deleting outdated zip file /home/data/SitePackages/20251216225430.zip" date="2025-12-22T15:08:27.343" /><!-- duration: 9ms -->
+    <step title="Attempting to fetch target branch HEAD" date="2025-12-22T15:08:27.362" /><!-- duration: 2ms -->
+    <step title="Acquiring Deployment Lock" date="2025-12-22T15:08:27.368" /><!-- duration: 6ms -->
+    <step title="Acquired Deployment Lock" date="2025-12-22T15:08:27.424" /><!-- duration: 10ms -->
+    <step title="Performing fetch based deployment" date="2025-12-22T15:08:27.440" >
+      <step title="Creating temporary deployment" date="2025-12-22T15:08:27.444" /><!-- duration: 89ms -->
+      <step title="Releasing Deployment Lock" date="2025-12-22T15:08:28.845" /><!-- duration: 4ms -->
+      <step title="None repository commit" date="2025-12-22T15:08:29.145" >
+        <step title="Commit id: ea683ce1-fcae-4575-bf8d-ea3523506a1a" date="2025-12-22T15:08:29.153" Message="Created via a push deployment" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 3ms -->
+      </step><!-- duration: 12ms -->
+      <step title="Deployment timer started" date="2025-12-22T15:08:31.175" >
+        <step title="DeploymentManager.Deploy(id:ea683ce1-fcae-4575-bf8d-ea3523506a1a)" date="2025-12-22T15:08:31.182" >
+          <step title="Collecting changeset information" date="2025-12-22T15:08:31.230" /><!-- duration: 143ms -->
+          <step title="Updating submodules" date="2025-12-22T15:08:31.377" /><!-- duration: 1228ms -->
+          <step title="Determining deployment builder" date="2025-12-22T15:08:32.924" >
+            <step title="Builder is RunFromZipSiteBuilder" date="2025-12-22T15:08:32.948" /><!-- duration: 8ms -->
+          </step><!-- duration: 53ms -->
+          <step title="PreDeployment: context.CleanOutputPath False" date="2025-12-22T15:08:33.075" >
+            <step title="PreDeployment: context.OutputPath /home/site/wwwroot" date="2025-12-22T15:08:33.304" >
+              <step title="Building" date="2025-12-22T15:08:33.498" >
+                <step title="Triggering recycle (preview mode disabled)." date="2025-12-22T15:08:34.234" /><!-- duration: 4ms -->
+                <step title="Modified file to trigger a restart of the app container." date="2025-12-22T15:08:34.283" /><!-- duration: 5ms -->
+                <step title="Skip function trigger and logicapp sync because sku (Basic) is not dynamic (consumption plan)." date="2025-12-22T15:08:34.304" /><!-- duration: 5ms -->
+              </step><!-- duration: 2163ms -->
+            </step><!-- duration: 2362ms -->
+            <step title="Cleaning up temp files" date="2025-12-22T15:08:35.669" /><!-- duration: 4ms -->
+            <step title="Cleaning up temp files" date="2025-12-22T15:08:35.680" /><!-- duration: 509ms -->
+            <step title="Reloading status file with latest updates" date="2025-12-22T15:08:36.210" >
+              <step title="WebHooksManager.PublishEventAsync: PostDeployment" date="2025-12-22T15:08:36.213" /><!-- duration: 39ms -->
+            </step><!-- duration: 44ms -->
+            <step title="Cleaning up temporary deployment - fetch deployment was successful" date="2025-12-22T15:08:36.263" /><!-- duration: 2ms -->
+          </step><!-- duration: 3295ms -->
+        </step><!-- duration: 5191ms -->
+        <step title="Outgoing response" date="2025-12-22T15:08:36.379" type="response" statusCode="200" statusText="OK" /><!-- duration: 3ms -->
+      </step><!-- duration: 5212ms -->
