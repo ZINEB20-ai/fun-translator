@@ -1,49 +1,100 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fun Translator</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="wrap">
-    <header class="header">
-      <h1>Fun Translator</h1>
-      <p>Traduction + historique (Cosmos DB) + monitoring (Application Insights)</p>
-    </header>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">FT</div>
+      <div>
+        <h1>Fun Translator</h1>
+        <p>Traduction + historique (Cosmos DB) + monitoring (Application Insights)</p>
+      </div>
+    </div>
 
-    <section class="card">
-      <label class="label" for="inputText">Texte à traduire</label>
-      <textarea id="inputText" class="textarea" rows="4" placeholder="Écris un texte…"></textarea>
+    <div class="status" id="status">
+      <span class="dot"></span>
+      <span class="label">Prêt</span>
+    </div>
+  </header>
 
-      <div class="row">
-        <div class="col">
-          <label class="label" for="languageSelect">Langue cible</label>
-          <select id="languageSelect" class="select">
-            <option value="en">Anglais</option>
-            <option value="es">Espagnol</option>
-            <option value="fr">Français</option>
-            <option value="ar">Arabe</option>
-            <option value="tr">Turc</option>
-            <option value="hi">Hindi</option>
-          </select>
+  <main class="container">
+    <section class="grid">
+      <!-- Card: Translator -->
+      <div class="card">
+        <div class="card-head">
+          <h2>Traduire</h2>
+          <span class="badge">POST /api/translate</span>
         </div>
 
-        <div class="col actions">
-          <button id="translateBtn" class="btn primary">Traduire</button>
-          <button id="listenInputBtn" class="btn">🔊 Écouter le texte</button>
-          <button id="listenResultBtn" class="btn">🔊 Écouter la traduction</button>
+        <label class="field">
+          <span>Texte à traduire</span>
+          <textarea id="text" rows="5" placeholder="Écris ton texte ici...">bonjour</textarea>
+        </label>
+
+        <div class="row">
+          <label class="field">
+            <span>Langue cible</span>
+            <select id="lang">
+              <option value="en">Anglais</option>
+              <option value="fr">Français</option>
+              <option value="es">Espagnol</option>
+              <option value="de">Allemand</option>
+              <option value="it">Italien</option>
+              <option value="ar">Arabe</option>
+              <option value="tr" selected>Turc</option>
+              <option value="ja">Japonais</option>
+              <option value="ko">Coréen</option>
+            </select>
+          </label>
+
+          <div class="field">
+            <span>Actions</span>
+            <div class="actions">
+              <button class="btn primary" id="btnTranslate">Traduire</button>
+              <button class="btn" id="btnSpeakText" title="Lire le texte">🔊 Texte</button>
+              <button class="btn" id="btnSpeakTranslation" title="Lire la traduction">🔊 Traduction</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="result">
+          <div class="result-head">
+            <h3>Résultat</h3>
+            <button class="btn ghost" id="btnCopy" title="Copier la traduction">Copier</button>
+          </div>
+          <pre id="output" class="output">—</pre>
         </div>
       </div>
 
-      <div class="resultBox">
-        <div class="label">Résultat</div>
-        <div id="result" class="result">—</div>
-      </div>
+      <!-- Card: History -->
+      <div class="card">
+        <div class="card-head">
+          <h2>Historique</h2>
+          <div class="card-head-right">
+            <button class="btn" id="btnRefreshHistory">Rafraîchir</button>
+            <button class="btn danger" id="btnClearHistory">Vider</button>
+          </div>
+        </div>
 
-      <div id="status" class="status">Prêt.</div>
+        <div id="history" class="history empty">
+          <p>Aucun historique pour le moment.</p>
+        </div>
+
+        <p class="hint">
+          Astuce : tu peux afficher ici les dernières traductions stockées dans Cosmos DB (si ton endpoint “read” existe).
+        </p>
+      </div>
     </section>
+
+    <footer class="footer">
+      <span>© Fun Translator</span>
+      <span class="muted">UI simple • responsive • sans framework</span>
+    </footer>
   </main>
 
   <script src="script.js"></script>
