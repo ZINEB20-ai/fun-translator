@@ -4,3 +4,9 @@ app.zip
 .DS_Store
 local.settings.json
 api/local.settings.json
+node_modules/
+app.zip
+local.settings.json
+api/local.settings.json
+.env
+.DS_Store
