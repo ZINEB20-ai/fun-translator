@@ -3,7 +3,6 @@ const API_BASE = "https://funtranslatorapizineb.azurewebsites.net";
 const elText = document.getElementById("text");
 const elLang = document.getElementById("lang");
 const elOut = document.getElementById("output");
-const LOCAL_HISTORY_KEY = "funtranslator_history_v1";
 
 const btnTranslate = document.getElementById("btnTranslate");
 const btnSpeakText = document.getElementById("btnSpeakText");
@@ -67,13 +66,6 @@ async function translate() {
 
     const translated = data?.[0]?.translations?.[0]?.text ?? "(aucune traduction)";
     lastTranslationText = translated;
-saveLocalHistory({
-  text,
-  translation: translated,
-  langTo: lang,
-  createdAt: new Date().toISOString()
-});
-renderLocalHistory();
 
     if (elOut) elOut.textContent = translated;
     setStatus("ok", "Prêt");
@@ -184,62 +176,14 @@ function escapeHtml(s) {
     .replaceAll("'", "&#039;");
 }
 
-btnRefreshHistory?.addEventListener("click", renderLocalHistory);
+btnRefreshHistory?.addEventListener("click", loadHistory);
 
 btnClearHistory?.addEventListener("click", () => {
-  localStorage.removeItem(LOCAL_HISTORY_KEY);
-  renderLocalHistory();
-  setStatus("ok", "Historique vidé");
-  setTimeout(() => setStatus("ok", "Prêt"), 1200);
+  if (!historyEl) return;
+  historyEl.innerHTML = "<p>Historique vidé (local).</p>";
+  historyEl.classList.add("empty");
 });
-
 
 setStatus("ok", "Prêt");
 console.log("✅ script.js chargé");
 // loadHistory(); // décommente seulement si ton endpoint /api/history existe
-function readLocalHistory() {
-  try {
-    return JSON.parse(localStorage.getItem(LOCAL_HISTORY_KEY) || "[]");
-  } catch {
-    return [];
-  }
-}
-
-function saveLocalHistory(item) {
-  const items = readLocalHistory();
-  items.unshift(item);
-  localStorage.setItem(LOCAL_HISTORY_KEY, JSON.stringify(items.slice(0, 20)));
-}
-
-function renderLocalHistory() {
-  if (!historyEl) return;
-
-  const items = readLocalHistory();
-  historyEl.innerHTML = "";
-
-  if (!items.length) {
-    historyEl.classList.add("empty");
-    historyEl.innerHTML = "<p>Aucun historique.</p>";
-    return;
-  }
-
-  historyEl.classList.remove("empty");
-
-  items.slice(0, 10).forEach((it) => {
-    const div = document.createElement("div");
-    div.className = "item";
-    div.innerHTML = `
-      <div class="meta">
-        <span>auto → ${escapeHtml(it.langTo || "—")}</span>
-        <span>${new Date(it.createdAt).toLocaleString()}</span>
-      </div>
-      <div class="pair">
-        <div><b>Texte :</b> ${escapeHtml(it.text || "")}</div>
-        <div><b>Traduction :</b> ${escapeHtml(it.translation || "")}</div>
-      </div>
-    `;
-    historyEl.appendChild(div);
-  });
-  renderLocalHistory();
-
-}
