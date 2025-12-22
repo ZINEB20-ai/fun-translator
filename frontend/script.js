@@ -19,10 +19,6 @@ const btnClearHistory = document.getElementById("btnClearHistory");
 
 let lastTranslationText = "";
 
-/* =========================
-   UTILS
-   ========================= */
-
 function setStatus(type, msg) {
   if (!statusLabel || !statusDot) return;
 
@@ -39,22 +35,6 @@ function setStatus(type, msg) {
     statusDot.style.boxShadow = "0 0 0 4px rgba(255,77,109,.15)";
   }
 }
-
-function speak(text) {
-  if (!text) return;
-  if (!("speechSynthesis" in window)) {
-    alert("La synthèse vocale n'est pas supportée dans ce navigateur.");
-    return;
-  }
-  window.speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.rate = 1;
-  window.speechSynthesis.speak(u);
-}
-
-/* =========================
-   TRANSLATE
-   ========================= */
 
 async function translate() {
   const text = (elText?.value || "").trim();
@@ -76,17 +56,11 @@ async function translate() {
       body: JSON.stringify({ text, lang }),
     });
 
-    // même si erreur, Azure peut renvoyer du json
-    let data = null;
-    try {
-      data = await res.json();
-    } catch {
-      data = null;
-    }
+    const data = await res.json().catch(() => null);
 
     if (!res.ok) {
-      setStatus("err", `Erreur API (${res.status})`);
-      if (elOut) elOut.textContent = data ? JSON.stringify(data, null, 2) : "(pas de réponse JSON)";
+      setStatus("err", `Erreur ${res.status}`);
+      if (elOut) elOut.textContent = data ? JSON.stringify(data, null, 2) : "Erreur API";
       return;
     }
 
@@ -101,16 +75,27 @@ async function translate() {
   }
 }
 
-/* =========================
-   BUTTONS
-   ========================= */
+function speak(text) {
+  if (!("speechSynthesis" in window)) {
+    alert("La synthèse vocale n'est pas supportée dans ce navigateur.");
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.rate = 1;
+  window.speechSynthesis.speak(u);
+}
+
+// Sécurité: si un ID manque, on log clairement
+function assertEl(name, el) {
+  if (!el) console.error(`❌ Élément manquant: #${name}`);
+}
+assertEl("text", elText);
+assertEl("lang", elLang);
+assertEl("output", elOut);
+assertEl("btnTranslate", btnTranslate);
 
 btnTranslate?.addEventListener("click", translate);
-
-// Enter pour traduire
-elText?.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) translate();
-});
 
 btnSpeakText?.addEventListener("click", () => {
   const t = (elText?.value || "").trim();
@@ -123,21 +108,13 @@ btnSpeakTranslation?.addEventListener("click", () => {
 
 btnCopy?.addEventListener("click", async () => {
   if (!lastTranslationText) return;
-
   try {
     await navigator.clipboard.writeText(lastTranslationText);
     setStatus("ok", "Copié ✅");
     setTimeout(() => setStatus("ok", "Prêt"), 1200);
   } catch {
-    // fallback
-    const ta = document.createElement("textarea");
-    ta.value = lastTranslationText;
-    document.body.appendChild(ta);
-    ta.select();
-    document.execCommand("copy");
-    document.body.removeChild(ta);
-    setStatus("ok", "Copié ✅");
-    setTimeout(() => setStatus("ok", "Prêt"), 1200);
+    // fallback si clipboard bloqué
+    alert("Impossible de copier automatiquement. Sélectionne le texte et copie-le manuellement.");
   }
 });
 
@@ -157,7 +134,7 @@ async function loadHistory() {
 
     const items = await res.json();
 
-    if (!Array.isArray(items) || items.length === 0) {
+    if (!items || !items.length) {
       historyEl.classList.add("empty");
       historyEl.innerHTML = "<p>Aucun historique.</p>";
       return;
@@ -167,18 +144,18 @@ async function loadHistory() {
       const div = document.createElement("div");
       div.className = "item";
 
+      const created = item.createdAt ? new Date(item.createdAt).toLocaleString() : "—";
       const from = item.langFrom || "auto";
       const to = item.langTo || item.lang || "—";
-      const when = item.createdAt ? new Date(item.createdAt).toLocaleString() : "";
 
       div.innerHTML = `
         <div class="meta">
           <span>${from} → ${to}</span>
-          <span>${when}</span>
+          <span>${created}</span>
         </div>
         <div class="pair">
-          <div><b>Texte :</b> ${item.text ?? ""}</div>
-          <div><b>Traduction :</b> ${item.translation ?? ""}</div>
+          <div><b>Texte :</b> ${escapeHtml(item.text || "")}</div>
+          <div><b>Traduction :</b> ${escapeHtml(item.translation || "")}</div>
         </div>
       `;
 
@@ -190,6 +167,15 @@ async function loadHistory() {
   }
 }
 
+function escapeHtml(s) {
+  return String(s)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
 btnRefreshHistory?.addEventListener("click", loadHistory);
 
 btnClearHistory?.addEventListener("click", () => {
@@ -198,9 +184,6 @@ btnClearHistory?.addEventListener("click", () => {
   historyEl.classList.add("empty");
 });
 
-/* =========================
-   INIT
-   ========================= */
-
 setStatus("ok", "Prêt");
+console.log("✅ script.js chargé");
 // loadHistory(); // décommente seulement si ton endpoint /api/history existe
