@@ -2,6 +2,18 @@ const { app } = require("@azure/functions");
 const fetch = require("node-fetch");
 const { CosmosClient } = require("@azure/cosmos");
 
+function getCosmos() {
+  const conn = process.env.COSMOS_CONNECTION_STRING;
+  const dbName = process.env.COSMOS_DB;
+  const containerName = process.env.COSMOS_CONTAINER;
+
+  if (!conn || !dbName || !containerName) return null;
+
+  const client = new CosmosClient(conn);
+  const container = client.database(dbName).container(containerName);
+  return container;
+}
+
 app.http("translate", {
   methods: ["POST"],
   authLevel: "anonymous",
@@ -12,75 +24,63 @@ app.http("translate", {
       const lang = (body.lang || "").trim();
 
       if (!text || !lang) {
-        return {
-          status: 400,
-          jsonBody: { error: "Missing parameters: text and lang are required" },
-        };
+        return { status: 400, jsonBody: { error: "Missing text or lang" } };
       }
 
-      // --- Translator env ---
       const key = process.env.TRANSLATOR_KEY;
-      const endpoint = process.env.TRANSLATOR_ENDPOINT || "https://api.cognitive.microsofttranslator.com";
-      const region = process.env.TRANSLATOR_REGION;
+      const endpoint = process.env.TRANSLATOR_ENDPOINT;
+      const region = process.env.TRANSLATOR_REGION || "westeurope";
 
-      if (!key || !endpoint || !region) {
-        return {
-          status: 500,
-          jsonBody: { error: "Missing TRANSLATOR_KEY / TRANSLATOR_ENDPOINT / TRANSLATOR_REGION" },
-        };
+      if (!key || !endpoint) {
+        return { status: 500, jsonBody: { error: "Missing Translator config" } };
       }
 
-      // --- Call Microsoft Translator ---
-      const url = `${endpoint.replace(/\/$/, "")}/translate?api-version=3.0&to=${encodeURIComponent(lang)}`;
+      const url = `${endpoint}/translate?api-version=3.0&to=${encodeURIComponent(lang)}`;
 
       const resp = await fetch(url, {
         method: "POST",
         headers: {
           "Ocp-Apim-Subscription-Key": key,
           "Ocp-Apim-Subscription-Region": region,
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
-        body: JSON.stringify([{ Text: text }]),
+        body: JSON.stringify([{ Text: text }])
       });
 
-      const raw = await resp.text();
       if (!resp.ok) {
-        return {
-          status: resp.status,
-          jsonBody: { error: "Translator API error", details: raw },
-        };
+        const errText = await resp.text();
+        context.error("Translator error:", errText);
+        return { status: 500, jsonBody: { error: "Translator failed", details: errText } };
       }
 
-      const result = JSON.parse(raw);
-      const translatedText = result?.[0]?.translations?.[0]?.text ?? "";
+      const result = await resp.json();
+      const translated = result?.[0]?.translations?.[0]?.text || "";
 
-      // --- Save to Cosmos DB (history) ---
-      const cs = process.env.COSMOS_CONNECTION_STRING;
-      if (cs) {
-        const client = new CosmosClient(cs);
-        const container = client.database("translationsDB").container("history");
-
-        await container.items.create({
+      // ✅ Save to Cosmos (best-effort)
+      const container = getCosmos();
+      if (container) {
+        const item = {
           id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
-          text,
-          translatedText,
           lang,
-          createdAt: new Date().toISOString(),
-        });
-      } else {
-        context.log("COSMOS_CONNECTION_STRING not set -> history not saved.");
+          input: text,
+          output: translated,
+          createdAt: new Date().toISOString()
+        };
+
+        try {
+          await container.items.create(item);
+        } catch (e) {
+          context.warn("Cosmos write failed:", e.message);
+        }
       }
 
       return {
         status: 200,
-        jsonBody: {
-          translation: translatedText,
-          raw: result, // utile si tu veux voir tout le JSON
-        },
+        jsonBody: { translation: translated, raw: result }
       };
     } catch (e) {
-      context.log("Server error:", e);
-      return { status: 500, jsonBody: { error: "Server error", details: String(e) } };
+      context.error("Server error:", e);
+      return { status: 500, jsonBody: { error: "Server error", details: e.message } };
     }
-  },
+  }
 });
