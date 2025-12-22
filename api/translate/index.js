@@ -1,6 +1,5 @@
 module.exports = async function (context, req) {
   try {
-    // Body peut être string ou objet selon runtime
     let body = req.body;
     if (typeof body === "string") {
       try { body = JSON.parse(body); } catch (_) {}
@@ -16,7 +15,7 @@ module.exports = async function (context, req) {
 
     const key = process.env.TRANSLATOR_KEY;
     const endpoint = process.env.TRANSLATOR_ENDPOINT || "https://api.cognitive.microsofttranslator.com";
-    const region = process.env.TRANSLATOR_REGION; // francecentral
+    const region = process.env.TRANSLATOR_REGION;
 
     if (!key) {
       context.res = { status: 500, body: { error: "Missing TRANSLATOR_KEY" } };
@@ -31,7 +30,6 @@ module.exports = async function (context, req) {
     };
     if (region) headers["Ocp-Apim-Subscription-Region"] = region;
 
-    // Timeout 8s pour éviter blocage
     const controller = new AbortController();
     const t = setTimeout(() => controller.abort(), 8000);
 
@@ -51,13 +49,9 @@ module.exports = async function (context, req) {
     let data;
     try { data = JSON.parse(raw); } catch { data = raw; }
 
-    context.res = {
-      status: response.status,
-      headers: { "Content-Type": "application/json" },
-      body: data
-    };
+    context.res = { status: response.status, body: data };
   } catch (e) {
-    context.log.error("translate error:", e);
+    context.log.error(e);
     context.res = { status: 500, body: { error: String(e?.message || e) } };
   }
 };
