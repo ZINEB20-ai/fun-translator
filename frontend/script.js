@@ -13,6 +13,7 @@ const btnCopy = document.getElementById("btnCopy");
 const statusEl = document.getElementById("status");
 const statusLabel = statusEl?.querySelector(".label");
 const statusDot = statusEl?.querySelector(".dot");
+const API_BASE = "https://funtranslatorapizineb.azurewebsites.net";
 
 const historyEl = document.getElementById("history");
 const btnRefreshHistory = document.getElementById("btnRefreshHistory");
